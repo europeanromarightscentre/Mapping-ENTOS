@@ -6,33 +6,51 @@
     <title>Operation ENTOS: Raid Data Table</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f9f9f9; color: #333; }
-        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         h1 { color: #333; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1976d2; text-decoration: none; font-weight: bold; }
+        .back-link:hover { text-decoration: underline; }
+        
         table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 14px; }
         th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background-color: #f4f4f4; font-weight: bold; cursor: pointer; }
+        th { background-color: #f4f4f4; font-weight: bold; cursor: pointer; white-space: nowrap; }
         th:hover { background-color: #e0e0e0; }
         tr:hover { background-color: #f1f1f1; }
+        
         .link-btn { display: inline-block; padding: 5px 10px; background: #1976d2; color: white; text-decoration: none; border-radius: 4px; font-size: 12px; }
         .link-btn:hover { background: #1565c0; }
         .loading { text-align: center; padding: 50px; font-size: 18px; color: #666; }
-        .offences { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        
+        /* Column Widths */
+        .col-date { width: 100px; }
+        .col-loc { width: 150px; }
+        .col-units { width: 120px; }
+        .col-arrests { width: 80px; }
+        .col-offences { width: 250px; }
+        .col-desc { width: 300px; }
+        
+        /* Truncate long text in table cells for readability, but allow hover to see full text */
+        .truncate { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .full-text { max-width: 400px; white-space: normal; word-wrap: break-word; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Operation ENTOS: Raid Data Log</h1>
+    <a href="index.html" class="back-link">← Back to Map</a>
+    <h1>Operation ENTOS: Full Raid Data Log</h1>
     <p>Click column headers to sort. Data updates automatically from <code>data.json</code>.</p>
     
     <div id="loading" class="loading">Loading data...</div>
     <table id="raidTable" style="display:none;">
         <thead>
             <tr>
-                <th onclick="sortTable(0)">Date</th>
-                <th onclick="sortTable(1)">Location</th>
-                <th onclick="sortTable(2)">Offences</th>
-                <th onclick="sortTable(3)">Details</th>
+                <th class="col-date" onclick="sortTable(0)">Date</th>
+                <th class="col-loc" onclick="sortTable(1)">Location</th>
+                <th class="col-units" onclick="sortTable(2)">Police Units</th>
+                <th class="col-arrests" onclick="sortTable(3)">Arrests</th>
+                <th class="col-offences" onclick="sortTable(4)">Offences Cited</th>
+                <th class="col-desc" onclick="sortTable(5)">Details</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -43,7 +61,6 @@
 </div>
 
 <script>
-    // Fetch Data
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
@@ -60,8 +77,10 @@
                 row.innerHTML = `
                     <td>${raid.date}</td>
                     <td>${raid.loc}</td>
-                    <td class="offences" title="${raid.offences}">${raid.offences}</td>
-                    <td>${raid.desc}</td>
+                    <td><strong>${raid.units}</strong></td>
+                    <td><span style="color: #d32f2f; font-weight: bold;">${raid.arrests}</span></td>
+                    <td class="full-text" title="${raid.offences}">${raid.offences}</td>
+                    <td class="full-text" title="${raid.desc}">${raid.desc}</td>
                     <td><a href="${raid.link}" target="_blank" class="link-btn">View Report</a></td>
                 `;
                 tbody.appendChild(row);
@@ -72,7 +91,6 @@
             console.error(error);
         });
 
-    // Simple Sort Function
     function sortTable(n) {
         var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
         table = document.getElementById("raidTable");
@@ -86,7 +104,6 @@
                 x = rows[i].getElementsByTagName("TD")[n];
                 y = rows[i + 1].getElementsByTagName("TD")[n];
                 
-                // Handle numeric vs string sorting
                 var xVal = isNaN(x.innerHTML) ? x.innerHTML.toLowerCase() : parseFloat(x.innerHTML);
                 var yVal = isNaN(y.innerHTML) ? y.innerHTML.toLowerCase() : parseFloat(y.innerHTML);
 
