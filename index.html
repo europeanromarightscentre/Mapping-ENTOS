@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation ENTOS: Police Raids Tracker</title>
+    <title>Operation ENTOS Police Raids Tracker</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -12,16 +12,108 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
-        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
-        #map { height: 500px; width: 100%; border: 1px solid #ddd; border-radius: 8px; margin: 20px 0; }
-        .info-box { position: absolute; top: 10px; right: 10px; z-index: 1000; background: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2); max-width: 300px; font-size: 14px; line-height: 1.4; }
-        h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        p { margin: 5px 0; color: #555; }
-        .stat { font-weight: bold; color: #d32f2f; }
-        .footer-attribution { position: absolute; bottom: 5px; right: 5px; z-index: 1000; font-size: 11px; background: rgba(255,255,255,0.8); padding: 2px 5px; border-radius: 3px; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        
+        /* Full Width Container */
+        .container { 
+            width: 100%; 
+            margin: 0; 
+            padding: 0; 
+            position: relative; /* Needed for absolute positioning of overlays */
+        }
+
+        /* FULL SCREEN MAP */
+        #map { 
+            height: 100vh; 
+            width: 100%; 
+            border: none; 
+            margin: 0; 
+            display: block;
+        }
+
+        /* Overlay Title (Top Left) */
+        .overlay-title {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            max-width: 350px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .overlay-title h1 {
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            color: #333;
+            border-bottom: 2px solid #d32f2f;
+            padding-bottom: 5px;
+        }
+
+        .overlay-title p {
+            margin: 0 0 10px 0;
+            color: #555;
+        }
+
+        .stat { 
+            font-weight: bold; 
+            color: #d32f2f; 
+            font-size: 16px;
+        }
+
+        /* Stats Box (Top Right - Existing) */
+        .info-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 300px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .info-box h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .info-box p { margin: 5px 0; color: #555; }
+        
+        .footer-attribution { 
+            position: absolute; 
+            bottom: 5px; 
+            right: 5px; 
+            z-index: 1000; 
+            font-size: 11px; 
+            background: rgba(255,255,255,0.8); 
+            padding: 2px 5px; 
+            border-radius: 3px; 
+        }
+        
         .popup-content strong { color: #d32f2f; display: block; margin-bottom: 4px; }
-        .popup-link { display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #1976d2; color: white !important; text-decoration: none; border-radius: 4px; font-size: 12px; font-weight: bold; text-align: center; }
+        .popup-link { 
+            display: inline-block; 
+            margin-top: 8px; 
+            padding: 6px 12px; 
+            background-color: #1976d2; 
+            color: white !important; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            font-size: 12px; 
+            font-weight: bold; 
+            text-align: center; 
+        }
         .popup-link:hover { background-color: #1565c0; }
         .loading { text-align: center; padding: 50px; font-size: 18px; color: #666; }
     </style>
@@ -29,10 +121,25 @@
 <body>
 
 <div class="container">
-    <h1>Operation ENTOS: Police Raids Tracker</h1>
-    <p>This interactive map tracks documented raids on Roma communities in Greece. Data is updated automatically from the source file.</p>
-    
+    <!-- OVERLAY TITLE (Top Left) -->
+    <div class="overlay-title">
+        <h1>Operation ENTOS Tracker</h1>
+        <p>Tracking documented police raids on Romani communities in Greece.</p>
+        <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
+        <p style="font-size: 12px; color: #777;">Click clusters to zoom. Click pins for details.</p>
+    </div>
+
+    <!-- THE MAP -->
     <div id="map"></div>
+    
+    <!-- STATS BOX (Top Right) -->
+    <div class="info-box">
+        <h2>Operation ENTOS Tracker</h2>
+        <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
+        <p><strong>Period:</strong> Sept 2025 – May 2026</p>
+        <p><strong>Avg Frequency:</strong> ~1 raid every 5 days</p>
+    </div>
+
     <div class="footer-attribution">
         &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | Data: Jonathan Lee / ERRC
     </div>
@@ -44,7 +151,7 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
-    // Wait for the DOM to be fully loaded before running
+    // Wait for the DOM to be fully loaded
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize Map
         var map = L.map('map').setView([39.0, 22.0], 7);
@@ -76,13 +183,11 @@
                 return response.json();
             })
             .then(data => {
-                // Safely update the stats element
-                var statElement = document.querySelector('.stat');
-                if (statElement) {
-                    statElement.innerText = data.length;
-                } else {
-                    console.warn("Element with class 'stat' not found.");
-                }
+                // Update stats in BOTH boxes
+                var statElements = document.querySelectorAll('.stat');
+                statElements.forEach(el => {
+                    el.innerText = data.length;
+                });
 
                 data.forEach(raid => {
                     var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
