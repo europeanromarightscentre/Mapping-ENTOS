@@ -7,69 +7,35 @@
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Leaflet MarkerCluster CSS (For grouping pins) -->
+    <!-- Leaflet MarkerCluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        #map { height: 100vh; width: 100%; }
-        .info-box {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 1000;
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            max-width: 300px;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-        h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px;}
+        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        #map { height: 500px; width: 100%; border: 1px solid #ddd; border-radius: 8px; margin: 20px 0; }
+        .info-box { position: absolute; top: 10px; right: 10px; z-index: 1000; background: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.2); max-width: 300px; font-size: 14px; line-height: 1.4; }
+        h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         p { margin: 5px 0; color: #555; }
         .stat { font-weight: bold; color: #d32f2f; }
-        .footer-attribution {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            z-index: 1000;
-            font-size: 11px;
-            background: rgba(255,255,255,0.8);
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-        /* Popup Styles */
+        .footer-attribution { position: absolute; bottom: 5px; right: 5px; z-index: 1000; font-size: 11px; background: rgba(255,255,255,0.8); padding: 2px 5px; border-radius: 3px; }
         .popup-content strong { color: #d32f2f; display: block; margin-bottom: 4px; }
-        .popup-link {
-            display: inline-block;
-            margin-top: 8px;
-            padding: 6px 12px;
-            background-color: #1976d2;
-            color: white !important; /* Forces white text */
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: bold;
-            text-align: center;
-        }
+        .popup-link { display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #1976d2; color: white !important; text-decoration: none; border-radius: 4px; font-size: 12px; font-weight: bold; text-align: center; }
         .popup-link:hover { background-color: #1565c0; }
+        .loading { text-align: center; padding: 50px; font-size: 18px; color: #666; }
     </style>
 </head>
 <body>
 
-<div class="info-box">
-    <h2>Operation ENTOS Tracker</h2>
-    <p><strong>Total Raids:</strong> <span class="stat">53</span></p>
-    <p><strong>Period:</strong> Sept 2025 – May 2026</p>
-    <p><strong>Avg Frequency:</strong> ~1 raid every 5 days</p>
-    <p style="font-size: 12px; margin-top: 10px; color: #777;">Click clusters to zoom in. Click pins for details.</p>
-</div>
-
-<div id="map"></div>
-<div class="footer-attribution">
-    &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | Data: Jonathan Lee / ERRC
+<div class="container">
+    <h1>Operation ENTOS: Police Raids Tracker</h1>
+    <p>This interactive map tracks documented raids on Roma communities in Greece. Data is updated automatically from the source file.</p>
+    
+    <div id="map"></div>
+    <div class="footer-attribution">
+        &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | Data: Jonathan Lee / ERRC
+    </div>
 </div>
 
 <!-- Leaflet JS -->
@@ -78,17 +44,17 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
-    // Initialize Map centered on Greece
+    // Initialize Map
     var map = L.map('map').setView([39.0, 22.0], 7);
 
-    // Using CartoDB Positron (No blocking, cleaner look)
+    // Tile Layer
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
         subdomains: 'abcd',
         maxZoom: 20
     }).addTo(map);
 
-    // Custom Icon for Raids
+    // Icon
     var raidIcon = L.icon({
         iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
@@ -98,86 +64,42 @@
         shadowSize: [41, 41]
     });
 
-    // Data Array with LINKS added (All 53 Raids)
-    const raids = [
-        {date: "13 Jun 2025", loc: "Argolida", lat: 37.61, lng: 22.73, desc: "Targeted ops in Argos, Nafplio", link: "https://www.astynomia.gr/2025/06/13/13-06-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/"},
-        {date: "6 Sep 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Preventive checks in settlements", link: "https://www.astynomia.gr/2025/09/06/06-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "9 Sep 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Repeated ops, same areas", link: "https://www.astynomia.gr/2025/09/09/09-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "17 Sep 2025", loc: "Argolida, Arcadia, Corinthia", lat: 37.50, lng: 22.37, desc: "Vehicle inspections, electricity theft", link: "https://www.astynomia.gr/2025/09/17/17-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-arkadia-kai-stin-korinthia/"},
-        {date: "2 Oct 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "ID violations, euphemistic language", link: "https://www.astynomia.gr/2025/10/02/02-10-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "17 Oct 2025", loc: "Argolida, Corinthia, Messinia", lat: 37.20, lng: 21.73, desc: "Regional coordinated op", link: "https://www.astynomia.gr/2025/10/17/17-10-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-messinia/"},
-        {date: "6 Nov 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Post-launch intensified ops", link: "https://www.astynomia.gr/2025/11/06/06-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "11 Nov 2025", loc: "Arcadia, Corinthia, Messinia", lat: 37.50, lng: 22.37, desc: "Early rollout ops", link: "https://www.astynomia.gr/2025/11/11/11-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-arkadia-stin-korinthia-kai-sti-messinia/"},
-        {date: "12 Nov 2025", loc: "Corinthia", lat: 37.93, lng: 22.93, desc: "5 arrests, 'social homogeneity' cited", link: "https://www.astynomia.gr/2025/11/12/12-11-2025-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-korinthia/"},
-        {date: "25 Nov 2025", loc: "Argolida, Arcadia, Messinia", lat: 37.50, lng: 22.37, desc: "13 arrests, multiple municipalities", link: "https://www.astynomia.gr/2025/11/25/25-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-kai-sti-messinia/"},
-        {date: "26 Nov 2025", loc: "Corinthia, Laconia", lat: 37.07, lng: 22.42, desc: "Water theft, mass checks", link: "https://www.astynomia.gr/2025/11/26/26-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-korinthia-kai-sti-lakonia/"},
-        {date: "3 Dec 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Stop and search operation", link: "https://www.astynomia.gr/2025/12/03/03-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "11 Dec 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Preventive controls", link: "https://www.astynomia.gr/2025/12/11/11-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "13 Dec 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Environmental offences, electricity", link: "https://www.astynomia.gr/2025/12/13/13-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "31 Dec 2025", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Cable seizures", link: "https://www.astynomia.gr/2025/12/31/31-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "12 Feb 2026", loc: "Argolida, Corinthia, Laconia, Messinia", lat: 37.20, lng: 21.73, desc: "Large regional op", link: "https://www.astynomia.gr/2026/02/12/12-02-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-sti-lakonia-kai-sti-messinia/"},
-        {date: "25 Feb 2026", loc: "Argolida, Corinthia, Laconia", lat: 37.07, lng: 22.42, desc: "19 arrests, health violations", link: "https://www.astynomia.gr/2026/02/25/25-02-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/"},
-        {date: "26 Feb 2026", loc: "Gastouni, Ilia", lat: 37.93, lng: 21.30, desc: "Armed units, drones deployed", link: "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/"},
-        {date: "11 Mar 2026", loc: "Paiania, Spata", lat: 37.93, lng: 23.83, desc: "OPKE, dogs, 16 arrests", link: "https://www.astynomia.gr/2026/03/11/11-03-2026-eidikes-astynomikes-epicheiriseis-pragmatopoiithikan-se-oikismous-tis-paianias-kai-ton-spaton/"},
-        {date: "12 Mar 2026", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Continuation of pattern", link: "https://www.astynomia.gr/2026/03/12/12-03-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "1 Apr 2026", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Local media identified Roma settlements", link: "https://www.astynomia.gr/2026/04/01/01-04-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "8 Apr 2026", loc: "Ano Liosia", lat: 38.07, lng: 23.68, desc: "230 checks, 46 homes searched", link: "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/"},
-        {date: "9 Apr 2026", loc: "Fthiotida", lat: 38.89, lng: 22.43, desc: "14 homes searched, Roma identified", link: "https://www.astynomia.gr/2026/04/09/09-04-2026-7-syllipseis-sto-plaisio-stochevmenon-astynomikon-epicheiriseon-pou-pragmatopoiithikan-tin-06-08-04-2026-se-oikismous-periochon-tis-fthiotidas/"},
-        {date: "14 Apr 2026", loc: "Kalamata, Messini", lat: 37.02, lng: 22.11, desc: "Multiple settlements targeted", link: "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/"},
-        {date: "21 Apr 2026", loc: "Aspropyrgos", lat: 38.05, lng: 23.63, desc: "10 arrests, weapons cited", link: "https://www.astynomia.gr/2026/04/21/21-04-2026-eidiki-astynomiki-epicheirisi-me-10-syllipseis-pragmatopoiithike-simera-21-4-2026-to-proi-se-oikismo-tou-aspropyrgou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/"},
-        {date: "22 Apr 2026", loc: "Argonafplia", lat: 37.61, lng: 22.73, desc: "Mass ID checks", link: "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/"},
-        {date: "22 Apr 2026", loc: "Fthiotida", lat: 38.89, lng: 22.43, desc: "Riot police, house searches", link: "https://www.astynomia.gr/2026/04/09/09-04-2026-7-syllipseis-sto-plaisio-stochevmenon-astynomikon-epicheiriseon-pou-pragmatopoiithikan-tin-06-08-04-2026-se-oikismous-periochon-tis-fthiotidas/"},
-        {date: "24 Apr 2026", loc: "Pyrgos, Ilia", lat: 37.67, lng: 21.44, desc: "114 people checked", link: "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/"},
-        {date: "1 May 2026", loc: "Chalkidona", lat: 40.58, lng: 22.98, desc: "Northern Greece pattern", link: "https://www.astynomia.gr/2026/05/01/01-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-po/"},
-        {date: "3 May 2026", loc: "Fyli", lat: 38.03, lng: 23.55, desc: "Night raid, 2 arrests", link: "https://www.astynomia.gr/2026/05/04/04-05-2026-eidiki-astynomiki-epicheirisi-me-2-syllipseis-pragmatopoiithike-vradines-ores-chthes-3-5-2026-se-oikismous-tis-fylis-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/"},
-        {date: "5 May 2026", loc: "Argolida, Arcadia, Corinthia, Messinia", lat: 37.50, lng: 22.37, desc: "Large regional op", link: "https://www.astynomia.gr/2026/05/05/05-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-stin-korinthia-kai-sti-messinia/"},
-        {date: "5 May 2026", loc: "Thessaly", lat: 39.64, lng: 22.42, desc: "Wide regional sweep", link: "https://www.astynomia.gr/2026/05/05/05-05-2026-evreia-astynomiki-epicheirisi-pragmatopoiithike-se-perioches-tis-thessalias-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas/"},
-        {date: "6 May 2026", loc: "Chalkidona", lat: 40.58, lng: 22.98, desc: "Repeat op within days", link: "https://www.astynomia.gr/2026/05/06/06-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "6 May 2026", loc: "Central Greece", lat: 38.89, lng: 22.43, desc: "27 arrests, regional sweep", link: "https://www.astynomia.gr/2026/05/06/06-05-2026-27-syllipseis-stis-taktikes-ektetamenes-astynomikes-epicheiriseis-chthes-stin-perifereia-stereas-elladas/"},
-        {date: "6 May 2026", loc: "Zefyri", lat: 38.01, lng: 23.68, desc: "Major op, 10 arrests, UAV", link: "https://www.astynomia.gr/2026/05/07/07-05-2026-eidiki-astynomiki-epicheirisi-me-10-syllipseis-pragmatopoiithike-chthes-6-5-2026-to-proi-se-oikismo-tou-zefyriou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/"},
-        {date: "7 May 2026", loc: "Argolida, Corinthia, Laconia", lat: 37.07, lng: 22.42, desc: "Peloponnese pattern", link: "https://www.astynomia.gr/2026/05/07/07-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/"},
-        {date: "8 May 2026", loc: "Diavata", lat: 40.62, lng: 22.98, desc: "Consecutive op", link: "https://www.astynomia.gr/2026/05/08/08-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "8 May 2026", loc: "Aigialeia", lat: 38.17, lng: 22.00, desc: "Targeted anti-crime", link: "https://www.astynomia.gr/2026/05/08/08-05-2026-stochevmeni-astynomiki-epicheirisi-gia-tin-egklimatikotita-stin-aigialeia/"},
-        {date: "8 May 2026", loc: "Megara, Nea Peramos", lat: 37.98, lng: 23.35, desc: "11 arrests, western Attica", link: "https://www.astynomia.gr/2026/05/11/11-05-2026-eidiki-astynomiki-epicheirisi-me-11-syllipseis-pragmatopoiithike-proines-ores-tis-8-5-2026-se-oikismous-ton-megaron-kai-tis-neas-peramou-me-skopo-tin-apotropi-kathe-morfis-paranomis-dras/"},
-        {date: "9 May 2026", loc: "Argolida", lat: 37.61, lng: 22.73, desc: "Repeat targeted op", link: "https://www.astynomia.gr/2026/05/09/09-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/"},
-        {date: "12 May 2026", loc: "Argolida, Arcadia, Laconia, Messinia", lat: 37.20, lng: 21.73, desc: "Coordinated regional op", link: "https://www.astynomia.gr/2026/05/12/12-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-sti-lakonia-kai-sti-messinia/"},
-        {date: "12 May 2026", loc: "Dendropotamos", lat: 40.55, lng: 22.95, desc: "Settlement long associated with Roma", link: "https://www.astynomia.gr/2026/05/12/12-05-2026-pragmatopoiithike-astynomiki-epicheirisi-stin-periochi-tou-dendropotamou-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos/"},
-        {date: "13 May 2026", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Repeat op, same language", link: "https://www.astynomia.gr/2026/05/13/13-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "13 May 2026", loc: "Chalkidona", lat: 40.58, lng: 22.98, desc: "Sustained rolling ops", link: "https://www.astynomia.gr/2026/05/13/13-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "14 May 2026", loc: "Diavata", lat: 40.62, lng: 22.98, desc: "Further op days after previous", link: "https://www.astynomia.gr/2026/05/15/15-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "14 May 2026", loc: "Aspropyrgos", lat: 38.05, lng: 23.63, desc: "9 arrests, tactical units", link: "https://www.astynomia.gr/2026/05/16/16-05-2026-eidiki-astynomiki-epicheirisi-me-9-syllipseis-pragmatopoiithike-proines-ores-tis-14-5-2026-se-oikismous-tou-aspropyrgou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/"},
-        {date: "15 May 2026", loc: "Peraia", lat: 40.53, lng: 22.98, desc: "Same logic as Diavata", link: "https://www.astynomia.gr/2026/05/16/16-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "16 May 2026", loc: "Argolida, Corinthia", lat: 37.93, lng: 22.93, desc: "Latest continuation", link: "https://www.astynomia.gr/2026/05/16/16-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/"},
-        {date: "19 May 2026", loc: "Argolida, Corinthia, Messinia", lat: 37.20, lng: 21.73, desc: "Regional sweep", link: "https://www.astynomia.gr/2026/05/19/19-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-messinia/"},
-        {date: "19 May 2026", loc: "Diavata", lat: 40.62, lng: 22.98, desc: "Saturation policing", link: "https://www.astynomia.gr/2026/05/19/19-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "20 May 2026", loc: "Argolida, Arcadia, Laconia", lat: 37.07, lng: 22.42, desc: "Multi-regional op", link: "https://www.astynomia.gr/2026/05/20/20-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-kai-sti-lakonia/"},
-        {date: "20 May 2026", loc: "Dendropotamos", lat: 40.55, lng: 22.95, desc: "Northern Greece pattern", link: "https://www.astynomia.gr/2026/05/20/20-05-2026-pragmatopoiithike-astynomiki-epicheirisi-stin-periochi-tou-dendropotamou-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"},
-        {date: "21 May 2026", loc: "Peraia", lat: 40.53, lng: 22.98, desc: "Generalized preventive policing", link: "https://www.astynomia.gr/2026/05/21/21-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/"}
-    ];
-
-    // Create a cluster group to handle overlapping markers
+    // Create Cluster Group
     var markers = L.markerClusterGroup();
 
-    // Add markers to the cluster group
-    raids.forEach(raid => {
-        var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
-        
-        var popupContent = `
-            <div class="popup-content">
-                <strong>${raid.date}</strong>
-                <strong>Location:</strong> ${raid.loc}<br>
-                <strong>Details:</strong> ${raid.desc}
-                <a href="${raid.link}" target="_blank" class="popup-link">View Police Report</a>
-            </div>
-        `;
-        
-        marker.bindPopup(popupContent);
-        markers.addLayer(marker);
-    });
+    // Fetch Data from JSON
+    fetch('data.json')
+        .then(response => {
+            if (!response.ok) throw new Error("Network response was not ok");
+            return response.json();
+        })
+        .then(data => {
+            // Update stats in info box
+            document.querySelector('.stat').innerText = data.length;
 
-    // Add the cluster group to the map
-    map.addLayer(markers);
+            data.forEach(raid => {
+                var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
+                
+                var popupContent = `
+                    <div class="popup-content">
+                        <strong>${raid.date}</strong>
+                        <strong>Location:</strong> ${raid.loc}<br>
+                        <strong>Offences:</strong> ${raid.offences}<br>
+                        <strong>Details:</strong> ${raid.desc}
+                        <a href="${raid.link}" target="_blank" class="popup-link">View Police Report</a>
+                    </div>
+                `;
+                
+                marker.bindPopup(popupContent);
+                markers.addLayer(marker);
+            });
 
+            map.addLayer(markers);
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            document.getElementById('map').innerHTML = '<div class="loading">Error loading data. Please check data.json.</div>';
+        });
 </script>
 
 </body>
