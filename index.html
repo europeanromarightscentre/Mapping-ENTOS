@@ -44,62 +44,73 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
-    // Initialize Map
-    var map = L.map('map').setView([39.0, 22.0], 7);
+    // Wait for the DOM to be fully loaded before running
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Map
+        var map = L.map('map').setView([39.0, 22.0], 7);
 
-    // Tile Layer
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 20
-    }).addTo(map);
+        // Tile Layer
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd',
+            maxZoom: 20
+        }).addTo(map);
 
-    // Icon
-    var raidIcon = L.icon({
-        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
-    });
-
-    // Create Cluster Group
-    var markers = L.markerClusterGroup();
-
-    // Fetch Data from JSON
-    fetch('data.json')
-        .then(response => {
-            if (!response.ok) throw new Error("Network response was not ok");
-            return response.json();
-        })
-        .then(data => {
-            // Update stats in info box
-            document.querySelector('.stat').innerText = data.length;
-
-            data.forEach(raid => {
-                var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
-                
-                var popupContent = `
-                    <div class="popup-content">
-                        <strong>${raid.date}</strong>
-                        <strong>Location:</strong> ${raid.loc}<br>
-                        <strong>Offences:</strong> ${raid.offences}<br>
-                        <strong>Details:</strong> ${raid.desc}
-                        <a href="${raid.link}" target="_blank" class="popup-link">View Police Report</a>
-                    </div>
-                `;
-                
-                marker.bindPopup(popupContent);
-                markers.addLayer(marker);
-            });
-
-            map.addLayer(markers);
-        })
-        .catch(error => {
-            console.error('Error loading data:', error);
-            document.getElementById('map').innerHTML = '<div class="loading">Error loading data. Please check data.json.</div>';
+        // Icon
+        var raidIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
         });
+
+        // Create Cluster Group
+        var markers = L.markerClusterGroup();
+
+        // Fetch Data from JSON
+        fetch('data.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok: " + response.statusText);
+                return response.json();
+            })
+            .then(data => {
+                // Safely update the stats element
+                var statElement = document.querySelector('.stat');
+                if (statElement) {
+                    statElement.innerText = data.length;
+                } else {
+                    console.warn("Element with class 'stat' not found.");
+                }
+
+                data.forEach(raid => {
+                    var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
+                    
+                    var popupContent = `
+                        <div class="popup-content">
+                            <strong>${raid.date}</strong>
+                            <strong>Location:</strong> ${raid.loc}<br>
+                            <strong>Offences:</strong> ${raid.offences}<br>
+                            <strong>Details:</strong> ${raid.desc}
+                            <a href="${raid.link}" target="_blank" class="popup-link">View Police Report</a>
+                        </div>
+                    `;
+                    
+                    marker.bindPopup(popupContent);
+                    markers.addLayer(marker);
+                });
+
+                map.addLayer(markers);
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                var mapDiv = document.getElementById('map');
+                if (mapDiv) {
+                    mapDiv.innerHTML = '<div class="loading">Error loading data. Please check data.json.<br><small>' + error.message + '</small></div>';
+                }
+            });
+    });
 </script>
 
 </body>
