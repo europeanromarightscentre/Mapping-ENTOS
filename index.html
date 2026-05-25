@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation ENTOS Police Raids Tracker</title>
+    <title>Operation ENTOS: Police Raids Tracker</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -37,7 +37,7 @@
             display: block;
         }
 
-        /* Overlay Title (Top Left) */
+        /* --- DESKTOP STYLES (Default) --- */
         .overlay-title {
             position: absolute;
             top: 20px;
@@ -50,6 +50,20 @@
             max-width: 350px;
             font-size: 14px;
             line-height: 1.5;
+        }
+
+        .info-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            max-width: 300px;
+            font-size: 14px;
+            line-height: 1.4;
         }
 
         .overlay-title h1 {
@@ -71,21 +85,25 @@
             font-size: 16px;
         }
 
-        /* Stats Box (Top Right) */
-        .info-box {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            max-width: 300px;
-            font-size: 14px;
-            line-height: 1.4;
+        .table-link-btn {
+            display: inline-block;
+            margin-top: 15px; /* Increased margin for separation */
+            padding: 8px 16px;
+            background-color: #333;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.3s;
+            width: 100%; /* Full width button on mobile */
+            box-sizing: border-box;
         }
-        
+        .table-link-btn:hover {
+            background-color: #555;
+        }
+
         .info-box h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .info-box p { margin: 5px 0; color: #555; }
         
@@ -115,25 +133,73 @@
         }
         .popup-link:hover { background-color: #1565c0; }
         .loading { text-align: center; padding: 50px; font-size: 18px; color: #666; }
+
+        /* --- MOBILE RESPONSIVE STYLES (Screens smaller than 768px) --- */
+        @media (max-width: 768px) {
+            .overlay-title, .info-box {
+                position: relative; /* Remove absolute positioning */
+                top: auto;
+                left: auto;
+                right: auto;
+                width: 90%; /* Take up most of the width */
+                max-width: none;
+                margin: 10px auto; /* Center horizontally */
+                padding: 15px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+            }
+
+            /* Stack them: Title first, then Stats */
+            .overlay-title {
+                order: 1;
+                margin-top: 10px;
+            }
+
+            .info-box {
+                order: 2;
+                margin-bottom: 10px;
+            }
+
+            /* Reduce font sizes for mobile */
+            .overlay-title h1 { font-size: 18px; }
+            .overlay-title p { font-size: 13px; }
+            .info-box h2 { font-size: 15px; }
+            .info-box p { font-size: 13px; }
+            
+            /* Adjust map height to accommodate stacked boxes */
+            #map {
+                height: calc(100vh - 180px); /* Subtract approx height of two boxes */
+                margin-top: 0;
+            }
+
+            .table-link-btn {
+                width: 100%;
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- OVERLAY TITLE (Top Left) -->
+    <!-- OVERLAY TITLE (Top Left on Desktop, Top on Mobile) -->
     <div class="overlay-title">
         <h1>Operation ENTOS Tracker</h1>
-        <p>Tracking & documenting police raids on Romani communities in Greece. This project is run by the European Roma Rights Centre and the Greek Helsinki Monitor.</p>
+        <p>Tracking documented raids on Roma communities in Greece.</p>
         <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
         <p style="font-size: 12px; color: #777;">Click clusters to zoom. Click pins for details.</p>
+        
+        <!-- Link to Table -->
+        <a href="table.html" class="table-link-btn">📊 View Full Data Table</a>
     </div>
 
     <!-- THE MAP -->
     <div id="map"></div>
     
-    <!-- STATS BOX (Top Right) -->
+    <!-- STATS BOX (Top Right on Desktop, Below Title on Mobile) -->
     <div class="info-box">
-        <h2>Live Police Raid Data</h2>
+        <h2>Operation ENTOS Tracker</h2>
         <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
         <p><strong>Period:</strong> <span id="period-display">Loading...</span></p>
         <p><strong>Avg Frequency:</strong> <span id="freq-display">Calculating...</span></p>
@@ -167,28 +233,15 @@
     // Helper function to calculate frequency
     function calculateFrequency(data) {
         if (data.length < 2) return "N/A";
-
-        // Parse all dates
         const dates = data.map(item => parseDate(item.date)).filter(d => d !== null);
-        
         if (dates.length < 2) return "N/A";
-
-        // Sort dates
         dates.sort((a, b) => a - b);
-
         const firstDate = dates[0];
         const lastDate = dates[dates.length - 1];
-        
-        // Calculate difference in days
         const diffTime = Math.abs(lastDate - firstDate);
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-        
-        if (diffDays === 0) return "Daily"; // All on same day
-
-        // Calculate raids per day, then invert to days per raid
-        const raidsPerDay = data.length / diffDays;
-        const daysPerRaid = diffDays / (data.length - 1); // Divide by (n-1) for intervals
-
+        if (diffDays === 0) return "Daily"; 
+        const daysPerRaid = diffDays / (data.length - 1); 
         return `1 raid every ${daysPerRaid.toFixed(1)} days`;
     }
 
@@ -224,13 +277,9 @@
                 return response.json();
             })
             .then(data => {
-                // 1. Update Total Raids
                 var statElements = document.querySelectorAll('.stat');
-                statElements.forEach(el => {
-                    el.innerText = data.length;
-                });
+                statElements.forEach(el => { el.innerText = data.length; });
 
-                // 2. Calculate and Update Period
                 if (data.length > 0) {
                     const dates = data.map(item => parseDate(item.date)).filter(d => d !== null).sort((a, b) => a - b);
                     if (dates.length >= 2) {
@@ -240,14 +289,11 @@
                     }
                 }
 
-                // 3. Calculate and Update Frequency
                 const freqText = calculateFrequency(data);
                 document.getElementById('freq-display').innerText = freqText;
 
-                // 4. Add Markers
                 data.forEach(raid => {
                     var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
-                    
                     var popupContent = `
                         <div class="popup-content">
                             <strong>${raid.date}</strong>
@@ -257,7 +303,6 @@
                             <a href="${raid.link}" target="_blank" class="popup-link">View Police Report</a>
                         </div>
                     `;
-                    
                     marker.bindPopup(popupContent);
                     markers.addLayer(marker);
                 });
