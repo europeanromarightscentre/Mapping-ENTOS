@@ -146,13 +146,17 @@
                 data.forEach(raid => {
                     var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
                     
-                    // TRUNCATED POPUP FOR MAP
+                    // TRUNCATED POPUP FOR MAP (Removed Units, Truncated Details)
+                    var detailsText = raid.details || "";
+                    var truncatedDetails = detailsText.length > 80 ? detailsText.substring(0, 80) + "..." : detailsText;
+
                     var popupContent = `
                         <div class="popup-content">
                             <strong>${raid.date}</strong>
                             <strong>Location:</strong> ${raid.loc}<br>
-                            <div class="popup-meta">Units: ${raid.units} | Arrests: ${raid.arrests}</div>
-                            <strong>Offences:</strong> ${raid.offences.substring(0, 60)}${raid.offences.length > 60 ? '...' : ''}<br>
+                            <div class="popup-meta">Arrests: ${raid.arrests}</div>
+                            <strong>Offences:</strong> ${raid.offences}<br>
+                            <strong>Details:</strong> ${truncatedDetails}<br>
                             <a href="${raid.link}" target="_blank" class="popup-link">View Full Report</a>
                         </div>
                     `;
