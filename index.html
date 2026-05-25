@@ -18,15 +18,14 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             line-height: 1.6; 
             color: #333; 
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; 
         }
         
-        /* Full Width Container */
         .container { 
             width: 100%; 
             margin: 0; 
             padding: 0; 
-            position: relative; /* Needed for absolute positioning of overlays */
+            position: relative; 
         }
 
         /* FULL SCREEN MAP */
@@ -72,7 +71,7 @@
             font-size: 16px;
         }
 
-        /* Stats Box (Top Right - Existing) */
+        /* Stats Box (Top Right) */
         .info-box {
             position: absolute;
             top: 20px;
@@ -124,7 +123,7 @@
     <!-- OVERLAY TITLE (Top Left) -->
     <div class="overlay-title">
         <h1>Operation ENTOS Tracker</h1>
-        <p>Tracking documented police raids on Romani communities in Greece.</p>
+        <p>Tracking & documenting police raids on Romani communities in Greece. This project is run by the European Roma Rights Centre and the Greek Helsinki Monitor.</p>
         <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
         <p style="font-size: 12px; color: #777;">Click clusters to zoom. Click pins for details.</p>
     </div>
@@ -134,10 +133,10 @@
     
     <!-- STATS BOX (Top Right) -->
     <div class="info-box">
-        <h2>Operation ENTOS Tracker</h2>
+        <h2>Live Police Raid Data</h2>
         <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
-        <p><strong>Period:</strong> Sept 2025 – May 2026</p>
-        <p><strong>Avg Frequency:</strong> ~1 raid every 5 days</p>
+        <p><strong>Period:</strong> <span id="period-display">Loading...</span></p>
+        <p><strong>Avg Frequency:</strong> <span id="freq-display">Calculating...</span></p>
     </div>
 
     <div class="footer-attribution">
@@ -151,6 +150,48 @@
 <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
 <script>
+    // Helper function to parse date string "DD Mon YYYY" to Date object
+    function parseDate(dateStr) {
+        const months = {
+            'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5,
+            'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11
+        };
+        const parts = dateStr.split(' ');
+        if (parts.length !== 3) return null;
+        const day = parseInt(parts[0], 10);
+        const month = months[parts[1]];
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+
+    // Helper function to calculate frequency
+    function calculateFrequency(data) {
+        if (data.length < 2) return "N/A";
+
+        // Parse all dates
+        const dates = data.map(item => parseDate(item.date)).filter(d => d !== null);
+        
+        if (dates.length < 2) return "N/A";
+
+        // Sort dates
+        dates.sort((a, b) => a - b);
+
+        const firstDate = dates[0];
+        const lastDate = dates[dates.length - 1];
+        
+        // Calculate difference in days
+        const diffTime = Math.abs(lastDate - firstDate);
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        
+        if (diffDays === 0) return "Daily"; // All on same day
+
+        // Calculate raids per day, then invert to days per raid
+        const raidsPerDay = data.length / diffDays;
+        const daysPerRaid = diffDays / (data.length - 1); // Divide by (n-1) for intervals
+
+        return `1 raid every ${daysPerRaid.toFixed(1)} days`;
+    }
+
     // Wait for the DOM to be fully loaded
     document.addEventListener('DOMContentLoaded', function() {
         // Initialize Map
@@ -183,12 +224,27 @@
                 return response.json();
             })
             .then(data => {
-                // Update stats in BOTH boxes
+                // 1. Update Total Raids
                 var statElements = document.querySelectorAll('.stat');
                 statElements.forEach(el => {
                     el.innerText = data.length;
                 });
 
+                // 2. Calculate and Update Period
+                if (data.length > 0) {
+                    const dates = data.map(item => parseDate(item.date)).filter(d => d !== null).sort((a, b) => a - b);
+                    if (dates.length >= 2) {
+                        const first = dates[0].toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+                        const last = dates[dates.length - 1].toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+                        document.getElementById('period-display').innerText = `${first} – ${last}`;
+                    }
+                }
+
+                // 3. Calculate and Update Frequency
+                const freqText = calculateFrequency(data);
+                document.getElementById('freq-display').innerText = freqText;
+
+                // 4. Add Markers
                 data.forEach(raid => {
                     var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
                     
