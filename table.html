@@ -24,14 +24,12 @@
         /* Column Widths */
         .col-date { width: 100px; }
         .col-loc { width: 150px; }
-        .col-units { width: 120px; }
         .col-arrests { width: 80px; }
         .col-offences { width: 250px; }
-        .col-desc { width: 300px; }
+        .col-details { width: 400px; }
         
-        /* Truncate long text in table cells for readability, but allow hover to see full text */
-        .truncate { max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .full-text { max-width: 400px; white-space: normal; word-wrap: break-word; }
+        /* Allow full text wrapping in Details column */
+        .full-text { max-width: 100%; white-space: normal; word-wrap: break-word; }
     </style>
 </head>
 <body>
@@ -47,10 +45,9 @@
             <tr>
                 <th class="col-date" onclick="sortTable(0)">Date</th>
                 <th class="col-loc" onclick="sortTable(1)">Location</th>
-                <th class="col-units" onclick="sortTable(2)">Police Units</th>
-                <th class="col-arrests" onclick="sortTable(3)">Arrests</th>
-                <th class="col-offences" onclick="sortTable(4)">Offences Cited</th>
-                <th class="col-desc" onclick="sortTable(5)">Details</th>
+                <th class="col-arrests" onclick="sortTable(2)">Arrests</th>
+                <th class="col-offences" onclick="sortTable(3)">Offences Cited</th>
+                <th class="col-details" onclick="sortTable(4)">Details (Full Notes)</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -74,13 +71,13 @@
 
             data.forEach(raid => {
                 const row = document.createElement('tr');
+                // UPDATED: Uses 'details' for the long text, removes 'units'
                 row.innerHTML = `
                     <td>${raid.date}</td>
                     <td>${raid.loc}</td>
-                    <td><strong>${raid.units}</strong></td>
                     <td><span style="color: #d32f2f; font-weight: bold;">${raid.arrests}</span></td>
                     <td class="full-text" title="${raid.offences}">${raid.offences}</td>
-                    <td class="full-text" title="${raid.desc}">${raid.desc}</td>
+                    <td class="full-text" title="${raid.details}">${raid.details}</td>
                     <td><a href="${raid.link}" target="_blank" class="link-btn">View Report</a></td>
                 `;
                 tbody.appendChild(row);
