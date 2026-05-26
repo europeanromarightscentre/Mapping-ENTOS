@@ -125,7 +125,7 @@
 
         var markers = L.markerClusterGroup();
 
-        fetch('data.json')
+        fetch('data_v2.json')
             .then(response => {
                 if (!response.ok) throw new Error("Network response was not ok: " + response.statusText);
                 return response.json();
@@ -170,7 +170,7 @@
             .catch(error => {
                 console.error('Error loading data:', error);
                 var mapDiv = document.getElementById('map');
-                if (mapDiv) mapDiv.innerHTML = '<div class="loading">Error loading data. Please check data.json.</div>';
+                if (mapDiv) mapDiv.innerHTML = '<div class="loading">Error loading data. Please check data_v2.json.</div>';
             });
     });
 </script>
