@@ -7,7 +7,6 @@
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Leaflet MarkerCluster CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
     
@@ -41,7 +40,7 @@
         .info-box h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
         .info-box p { margin: 5px 0; color: #555; }
 
-        /* Google Translate Widget - Embedded in Info Box */
+        /* Google Translate Widget Styling */
         #google_translate_element {
             margin-top: 10px;
             padding-top: 8px;
@@ -62,6 +61,7 @@
 
         /* Hide Google Translate Top Banner */
         .goog-te-banner-frame { display: none !important; }
+        iframe.goog-te-banner-frame { display: none !important; }
         body { top: 0 !important; }
         
         .footer-attribution { position: absolute; bottom: 5px; right: 5px; z-index: 1000; font-size: 11px; background: rgba(255,255,255,0.8); padding: 2px 5px; border-radius: 3px; }
@@ -117,7 +117,7 @@
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'en',
+            pageLanguage: 'en', // FORCE ENGLISH AS BASE
             includedLanguages: 'el,ro,bg,hu,sk,cs,pl,hr,sr,sl,de,fr,it,es,pt,nl,sv,da,fi,tr,ru,uk,en',
             layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
             autoDisplay: false
