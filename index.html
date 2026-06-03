@@ -3,174 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operation ENTOS: Police Raids Tracker</title>
+    <title>CopCrawler — ENTOS Police Raids Tracker</title>
     
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <!-- Leaflet MarkerCluster CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    <!-- Marker Cluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
     
     <style>
-        body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
-        .container { width: 100%; margin: 0; padding: 0; position: relative; }
-        #map { height: 100vh; width: 100%; border: none; margin: 0; display: block; }
-
-        .overlay-title {
-            position: absolute; top: 20px; left: 20px; z-index: 1000;
-            background: rgba(255, 255, 255, 0.95); padding: 20px; border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 350px; font-size: 14px; line-height: 1.5;
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #e0e0e0;
+            --text-muted: #a0a0a0;
+            --accent: #00bcd4;
+            --accent-hover: #0097a7;
         }
-        .overlay-title h1 { margin: 0 0 10px 0; font-size: 20px; color: #333; border-bottom: 2px solid #d32f2f; padding-bottom: 5px; }
-        .overlay-title p { margin: 0 0 10px 0; color: #555; }
-        .stat { font-weight: bold; color: #d32f2f; font-size: 16px; }
-        
-        .table-link-btn {
-            display: inline-block; margin-top: 15px; padding: 8px 16px;
-            background-color: #333; color: white !important; text-decoration: none;
-            border-radius: 4px; font-size: 13px; font-weight: bold; text-align: center;
-            transition: background 0.3s; width: 100%; box-sizing: border-box;
-        }
-        .table-link-btn:hover { background-color: #555; }
 
-        .info-box {
-            position: absolute; top: 20px; right: 20px; z-index: 1000;
-            background: white; padding: 15px; border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2); max-width: 300px; font-size: 14px; line-height: 1.4;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
         }
-        .info-box h2 { margin-top: 0; font-size: 16px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        .info-box p { margin: 5px 0; color: #555; }
-        
-        .footer-attribution { position: absolute; bottom: 5px; right: 5px; z-index: 1000; font-size: 11px; background: rgba(255,255,255,0.8); padding: 2px 5px; border-radius: 3px; }
-        
-        .popup-content strong { color: #d32f2f; display: block; margin-bottom: 4px; }
-        .popup-meta { font-size: 12px; color: #666; margin-bottom: 6px; font-style: italic; }
-        .popup-link { display: inline-block; margin-top: 8px; padding: 6px 12px; background-color: #1976d2; color: white !important; text-decoration: none; border-radius: 4px; font-size: 12px; font-weight: bold; text-align: center; }
-        .popup-link:hover { background-color: #1565c0; }
-        .loading { text-align: center; padding: 50px; font-size: 18px; color: #666; }
 
-        @media (max-width: 768px) {
-            .overlay-title, .info-box { position: relative; top: auto; left: auto; right: auto; width: 90%; max-width: none; margin: 10px auto; padding: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-radius: 8px; }
-            .overlay-title { order: 1; margin-top: 10px; }
-            .info-box { order: 2; margin-bottom: 10px; }
-            .overlay-title h1 { font-size: 18px; }
-            .overlay-title p, .info-box p { font-size: 13px; }
-            #map { height: calc(100vh - 180px); }
-            .table-link-btn { width: 100%; margin-top: 10px; font-size: 12px; }
+        /* Google Translate Widget Position */
+        #google_translate_element {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            background: var(--card-bg);
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        /* Hide Google Translate Top Banner (the annoying blue bar) */
+        .goog-te-banner-frame { display: none !important; }
+        body { top: 0 !important; }
+
+        /* Fix Google Select Styling on Dark Theme */
+        .goog-te-combo {
+            background: #333;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            padding: 20px 30px;
+            background-color: #000000;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo-img {
+            height: 100px;
+            width: auto;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 15px;
+            margin-top: 8px;
+            line-height: 1.4;
+            max-width: 900px;
+        }
+
+        #map {
+            height: 85vh;
+            width: 100%;
+        }
+
+        /* Custom Popup Styling */
+        .leaflet-popup-content-wrapper {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border-radius: 6px;
+            font-size: 14px;
+            max-width: 300px;
+        }
+        .leaflet-popup-tip {
+            background: var(--card-bg);
+        }
+        .popup-date {
+            font-weight: bold;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+        .popup-loc {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .popup-desc {
+            color: #ccc;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .popup-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .popup-link:hover {
+            text-decoration: underline;
+        }
+        .popup-arrests {
+            display: inline-block;
+            background: var(--accent);
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="overlay-title">
-        <h1>Operation ENTOS Tracker</h1>
-        <p>Tracking documented police raids on Romani communities in Greece. This project is coordinated by the European Roma Rights Centre and the Greek Helsinki Monitor.</p>
-        <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
-        <p style="font-size: 12px; color: #777;">Click clusters to zoom. Click pins for details.</p>
-        <a href="table.html" class="table-link-btn">📊 View Full Data Table</a>
-    </div>
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+
+    <header>
+        <img src="errc logo black white.png" alt="ERRC Logo" class="logo-img" onerror="this.style.display='none'">
+        <div class="header-text">
+            <h1>CopCrawler</h1>
+            <p class="subtitle">Cops are Creeps: Crawling Hellenic Police websites for anti-Roma police raids under Operation ENTOS.</p>
+        </div>
+    </header>
 
     <div id="map"></div>
-    
-    <div class="info-box">
-        <h2>Operation ENTOS Tracker</h2>
-        <p><strong>Total Raids:</strong> <span class="stat">Loading...</span></p>
-        <p><strong>Period:</strong> <span id="period-display">Loading...</span></p>
-        <p><strong>Avg Frequency:</strong> <span id="freq-display">Calculating...</span></p>
-    </div>
 
-    <div class="footer-attribution">
-        &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a> | Data: Jonathan Lee / ERRC
-    </div>
-</div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',  // BASE LANGUAGE IS ENGLISH
+                includedLanguages: 'el,fr,de,it,es,ro,hu,bg,sr,hr,sk,cs,pl,da,nl,sv,fi,pt,tr,ru,uk,en', // Languages to offer
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<script>
-    function parseDate(dateStr) {
-        const months = {'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5, 'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11};
-        const parts = dateStr.split(' ');
-        if (parts.length !== 3) return null;
-        return new Date(parseInt(parts[2]), months[parts[1]], parseInt(parts[0]));
-    }
+    <script>
+        // --- CONFIGURATION ---
+        const DATA_URL = 'data_v2.json';
+        let map, markers;
+        let raidData = [];
 
-    function calculateFrequency(data) {
-        if (data.length < 2) return "N/A";
-        const dates = data.map(item => parseDate(item.date)).filter(d => d !== null).sort((a, b) => a - b);
-        if (dates.length < 2) return "N/A";
-        const diffDays = Math.ceil(Math.abs(dates[dates.length - 1] - dates[0]) / (1000 * 60 * 60 * 24));
-        if (diffDays === 0) return "Daily";
-        return `1 raid every ${(diffDays / (data.length - 1)).toFixed(1)} days`;
-    }
+        // --- INITIALIZATION ---
+        async function init() {
+            map = L.map('map').setView([39.0, 22.0], 6);
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var map = L.map('map').setView([39.0, 22.0], 7);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-            subdomains: 'abcd', maxZoom: 20
-        }).addTo(map);
-
-        var raidIcon = L.icon({
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowSize: [41, 41]
-        });
-
-        var markers = L.markerClusterGroup();
-
-        // CACHE BUST: Appends current timestamp to force fresh download every time
-        var dataUrl = 'data_v2.json?v=' + new Date().getTime();
-
-        fetch(dataUrl)
-            .then(response => {
-                if (!response.ok) throw new Error("Network response was not ok: " + response.statusText);
-                return response.json();
-            })
-            .then(data => {
-                document.querySelectorAll('.stat').forEach(el => el.innerText = data.length);
-                
-                if (data.length > 0) {
-                    const dates = data.map(item => parseDate(item.date)).filter(d => d !== null).sort((a, b) => a - b);
-                    if (dates.length >= 2) {
-                        const first = dates[0].toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-                        const last = dates[dates.length - 1].toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
-                        document.getElementById('period-display').innerText = `${first} – ${last}`;
-                    }
-                }
-                document.getElementById('freq-display').innerText = calculateFrequency(data);
-
-                data.forEach(raid => {
-                    var marker = L.marker([raid.lat, raid.lng], {icon: raidIcon});
-                    
-                    var detailsText = raid.details || "";
-                    var truncatedDetails = detailsText.length > 80 ? detailsText.substring(0, 80) + "..." : detailsText;
-
-                    var popupContent = `
-                        <div class="popup-content">
-                            <strong>${raid.date}</strong>
-                            <strong>Location:</strong> ${raid.loc}<br>
-                            <div class="popup-meta">Arrests: ${raid.arrests}</div>
-                            <strong>Offences:</strong> ${raid.offences}<br>
-                            <strong>Details:</strong> ${truncatedDetails}<br>
-                            <a href="${raid.link}" target="_blank" class="popup-link">View Full Report</a>
-                        </div>
-                    `;
-                    
-                    marker.bindPopup(popupContent);
-                    markers.addLayer(marker);
-                });
-
-                map.addLayer(markers);
-            })
-            .catch(error => {
-                console.error('Error loading data:', error);
-                var mapDiv = document.getElementById('map');
-                if (mapDiv) mapDiv.innerHTML = '<div class="loading">Error loading data. Please check data_v2.json.</div>';
+            markers = L.markerClusterGroup({
+                showCoverageOnHover: false,
+                spiderfyOnMaxZoom: true,
+                removeOutsideVisibleBounds: true,
+                animate: true
             });
-    });
-</script>
+            map.addLayer(markers);
 
+            try {
+                const response = await fetch(DATA_URL);
+                raidData = await response.json();
+                renderMarkers();
+            } catch (error) {
+                console.error("Error loading data:", error);
+            }
+        }
+
+        // --- RENDER MARKERS ---
+        function renderMarkers() {
+            markers.clearLayers();
+
+            raidData.forEach(entry => {
+                if (!entry.lat || !entry.lng) return;
+
+                const popupContent = `
+                    <span class="popup-date">${entry.date}</span>
+                    <div class="popup-loc">📍 ${entry.loc}</div>
+                    ${entry.arrests && entry.arrests !== "0" ? `<span class="popup-arrests">🔒 ${entry.arrests} arrests</span>` : ''}
+                    <div class="popup-desc">${entry.desc}</div>
+                    <a href="${entry.link}" target="_blank" class="popup-link">🔗 View Source</a>
+                `;
+
+                const marker = L.marker([entry.lat, entry.lng]);
+                marker.bindPopup(popupContent, { maxWidth: 300 });
+                markers.addLayer(marker);
+            });
+        }
+
+        init();
+    </script>
 </body>
 </html>
