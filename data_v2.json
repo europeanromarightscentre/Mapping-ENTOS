@@ -1,17 +1,115 @@
 [
   {
+    "date": "14 Jun 2026",
+    "loc": "Thessaloniki",
+    "lat": 40.64,
+    "lng": 22.94,
+    "desc": "14-06-2026: A police operation was carried out in the settlement of Perea",
+    "offences": "Arms Law violation | Traffic violations",
+    "arrests": "1",
+    "details": "A total of 76 people and 62 vehicles were checked. One person was arrested for violation of the Arms Law.",
+    "link": "https://www.astynomia.gr/2026/06/14/14-06-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
+    "filter_reason": "Settlement Word: οικισμό",
+    "original_desc": "14-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας",
+    "original_details": "Συνελήφθη ένα άτομο για παράβαση του Νόμου περί όπλων."
+  },
+  {
+    "date": "13 Jun 2026",
+    "loc": "Thessaloniki",
+    "lat": 40.64,
+    "lng": 22.94,
+    "desc": "13-06-2026: A police operation was carried out in the settlement of Perea",
+    "offences": "Addictive Substances | Traffic violations",
+    "arrests": "1",
+    "details": "A total of 76 people and 67 vehicles were checked. One person was arrested for violating the Law on Addictive Substances.",
+    "link": "https://www.astynomia.gr/2026/06/13/13-06-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
+    "filter_reason": "Settlement Word: οικισμό",
+    "original_desc": "13-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας",
+    "original_details": "Συνελήφθη ένα άτομο για παράβαση του Νόμου περί εξαρτησιογόνων ουσιών."
+  },
+  {
+    "date": "13 Jun 2026",
+    "loc": "Argolida",
+    "lat": 37.61,
+    "lng": 22.73,
+    "desc": "13-06-2026: A targeted police operation took place in Argolis",
+    "offences": "Health Regulations | Electricity theft | Identity card | Neglect of minor",
+    "arrests": "6",
+    "details": "Targeted operation in groups of social homogeneity in Argos-Mycenae and Nafplio. 6 people arrested.",
+    "link": "https://www.astynomia.gr/2026/06/13/13-06-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
+    "filter_reason": "Raid Indicators (7)",
+    "original_desc": "13-06-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα",
+    "original_details": "Συνελήφθησαν -6- άτομα για παραβάσεις Υγειονομικού Κανονισμού, κλοπή ηλεκτρικής ενέργειας, στέρηση δελτίου ταυτότητας και παραμέληση εποπτείας ανηλίκου."
+  },
+  {
+    "date": "12 Jun 2026",
+    "loc": "Thessaloniki",
+    "lat": 40.64,
+    "lng": 22.94,
+    "desc": "12-06-2026: A police operation was carried out in the settlement of Perea",
+    "offences": "Disturbing the peace | Traffic violations",
+    "arrests": "1",
+    "details": "A total of 68 people and 37 vehicles were checked. One person arrested for disturbing the peace.",
+    "link": "https://www.astynomia.gr/2026/06/12/12-06-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
+    "filter_reason": "Settlement Word: οικισμό",
+    "original_desc": "12-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας",
+    "original_details": "Συνελήφθη (1) άτομο, για διατάραξη κοινής ησυχίας."
+  },
+  {
+    "date": "10 Jun 2026",
+    "loc": "Fthiotida",
+    "lat": 38.89,
+    "lng": 22.43,
+    "desc": "10-06-2026: -33- arrests in the regular extended police operations yesterday in the Region of Central Greece",
+    "offences": "Drugs | Electricity theft | Theft | Sanitary | Camping | Insubordination",
+    "arrests": "33",
+    "details": "Regional sweep in Fthiotida, Boiotia, Evia, Evrytania, Fokida. 33 arrests made.",
+    "link": "https://www.astynomia.gr/2026/06/10/10-06-2026-33-syllipseis-stis-taktikes-ektetamenes-astynomikes-epicheiriseis-chthes-stin-perifereia-stereas-elladas/",
+    "filter_reason": "Raid Indicators (2)",
+    "original_desc": "10-06-2026: -33- συλλήψεις στις τακτικές εκτεταμένες αστυνομικές επιχειρήσεις χθες στην Περιφέρεια Στερεάς Ελλάδας",
+    "original_details": "Συνελήφθησαν : – 33- άτομα..."
+  },
+  {
+    "date": "10 Jun 2026",
+    "loc": "Corinthia",
+    "lat": 37.93,
+    "lng": 22.93,
+    "desc": "10-06-2026: A targeted police operation took place in Corinthia",
+    "offences": "Electricity theft | Identity card | Theft | Proceeds of crime",
+    "arrests": "8",
+    "details": "Operation in Velos-Vochas and Sikyonia settlements. 8 arrests.",
+    "link": "https://www.astynomia.gr/2026/06/10/10-06-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-korinthia/",
+    "filter_reason": "Settlement Word: οικισμού",
+    "original_desc": "10-06-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Κορινθία",
+    "original_details": "Συνελήφθησαν -8- άτομα για κλοπή ηλεκτρικής ενέργειας, στέρηση δελτίου ταυτότητας, κλοπή και αποδοχή προϊόντων εγκλήματος."
+  },
+  {
+    "date": "09 Jun 2026",
+    "loc": "Argolida",
+    "lat": 37.61,
+    "lng": 22.73,
+    "desc": "09-06-2026: Targeted police operations were carried out in Argolis, Arcadia, Corinthia and Messinia",
+    "offences": "Electricity theft | Health Regulations | Identity card | Neglect of minor | Insubordination | Conviction document",
+    "arrests": "21",
+    "details": "Operations in Argolis, Arcadia, Corinthia, and Messinia. Total 21 arrests across all regions.",
+    "link": "https://www.astynomia.gr/2026/06/09/09-06-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-arkadia-korinthia-kai-sti-messinia/",
+    "filter_reason": "Raid Indicators (6)",
+    "original_desc": "09-06-2026: Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αργολίδα, Αρκαδία, Κορινθία και στη Μεσσηνία",
+    "original_details": "Συνελήφθησαν συνολικά -21- άτομα..."
+  },
+  {
     "date": "07 Jun 2026",
     "loc": "Thessaloniki",
     "lat": 40.64,
     "lng": 22.94,
-    "desc": "06-07-2026: A police operation was carried out in the settlement of Perea to prevent and deal with crime and to consolidate a sense of...",
+    "desc": "06-07-2026: A police operation was carried out in the settlement of Perea",
     "offences": "Electricity theft | Traffic violations",
     "arrests": "0",
-    "details": "THESSALONIKI JOURNALISTS' INFORMATION OFFICE Thessaloniki, June 7, 2026 PRESS RELEASE A police operation was carried out in the settlement of Peria to prevent and deal with crime and to establish a sense of security among citizens. A total of 56 people and 48 vehicles were checked.",
+    "details": "56 people and 48 vehicles checked. No arrests.",
     "link": "https://www.astynomia.gr/2026/06/07/07-06-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "filter_reason": "Settlement Word: οικισμό",
-    "original_desc": "07-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας για την πρόληψη και αντιμετώπιση της εγκληματικότητας και την εδραίωση αισθήματος...",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ Θεσσαλονίκη, 7 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας για την πρόληψη και αντιμετώπιση της εγκληματικότητας και την εδραίωση αισθήματος ασφάλειας στους πολίτες Ελέγχθηκαν συνολικά 56 άτομα και 48 οχήματα Στο πλαίσιο υλοποίησης επιχειρησιακού σχεδιασμού της Γενικής Αστυνομικής Διεύθυνσης Θεσσαλονίκης για την πρόληψη – αντιμετώπιση της εγκληματικότητας και την εδραίωση αισθήματος ασφάλειας των πολιτών, πρωινές έως μεσημβρινές ώρες χθες (06-06-2026), πραγματοποιήθηκε συντονισμένη αστυνομική επιχείρηση σε οικισμό της Περαίας."
+    "original_desc": "07-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας",
+    "original_details": "Ελέγχθηκαν συνολικά 56 άτομα και 48 οχήματα."
   },
   {
     "date": "06 Jun 2026",
@@ -21,11 +119,11 @@
     "desc": "06-06-2026: -8- people were arrested in Ilia as part of police checks",
     "offences": "Electricity theft | Drug possession | Theft | Lack of legal documents | Conviction order",
     "arrests": "8",
-    "details": "JOURNALISTS' INFORMATION OFFICE OF WESTERN GREECE Patras, June 6, 2026 PRESS RELEASE -8- people were arrested in Ilia in the context of police checks.",
+    "details": "Police checks in Ilia resulted in 8 arrests.",
     "link": "https://www.astynomia.gr/2026/06/06/06-06-2026-synelifthisan-8-atoma-stin-ileia-sto-plaisio-astynomikon-elegchon/",
     "filter_reason": "Raid Indicators (1)",
     "original_desc": "06-06-2026: Συνελήφθησαν -8- άτομα στην Ηλεία στο πλαίσιο αστυνομικών ελέγχων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ Πάτρα, 6 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συνελήφθησαν -8- άτομα στην Ηλεία στο πλαίσιο αστυνομικών ελέγχων Βεβαιώθηκαν -143- τροχονομικές παραβάσεις και -6- διοικητικά πρόστιμα για παράνομο υπαίθριο εμπόριο Συνελήφθησαν -8- άτομα και ειδικότερα: Ένας ημεδαπός, για καταδικαστική απόφαση Μία ημεδαπή για κατοχή ναρκωτικών, Ένας ημεδαπός για το αδίκημα της ρευματοκλοπής. Πέντε αλλοδαποί, που στερούνταν νόμιμων εγγράφων για τη διαμονή τους στη χώρα."
+    "original_details": "Συνελήφθησαν -8- άτομα..."
   },
   {
     "date": "06 Jun 2026",
@@ -35,11 +133,11 @@
     "desc": "06-06-2026: Targeted police operations were carried out in Argolis and Laconia",
     "offences": "Electricity theft | Health regulation violation | Conviction document | Insubordination",
     "arrests": "13",
-    "details": "JOURNALISTS INFORMATION OFFICE OF PELOPONNIS Tripoli, June 6, 2026 PRESS RELEASE Targeted police operations were carried out in Argolis and Laconia As part of the operations, a total of -13- people were arrested",
+    "details": "Operations in Argolis (6 arrests) and Laconia (7 arrests).",
     "link": "https://www.astynomia.gr/2026/06/06/06-06-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-sti-lakonia/",
     "filter_reason": "Raid Indicators (6)",
     "original_desc": "06-06-2026: Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αργολίδα και στη Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 6 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αργολίδα και στη Λακωνία Στο πλαίσιο των επιχειρήσεων συνελήφθησαν συνολικά -13- άτομα Στην Αργολίδα συνελήφθησαν -6- άτομα, για τα κάτωθι αδικήματα: -2- άτομα, για κλοπή ηλεκτρικής ενέργειας, -2- άτομα, για παράβαση του Υγειονομικού Κανονισμού, -1- άτομο, για καταδικαστικό έγγραφο και -1- άτομο, για ανυποταξία. Στη Λακωνία συνελήφθησαν -7- άτομα, για κλοπή ηλεκτρικής ενέργειας."
+    "original_details": "Συνελήφθησαν συνολικά -13- άτομα..."
   },
   {
     "date": "05 Jun 2026",
@@ -47,69 +145,41 @@
     "lat": 38.89,
     "lng": 22.43,
     "desc": "06-05-2026: -32- arrests in the regular extensive police operations yesterday in the Region of Central Greece",
-    "offences": "Drug legislation violation | Arms legislation violation | Health regulation violation | Traffic violations | Street trading | Illegal outdoor camping | Insubordination",
+    "offences": "Drug legislation | Arms legislation | Health regulation | Traffic violations | Street trading | Illegal camping | Insubordination",
     "arrests": "32",
-    "details": "STEREA GREECE JOURNALISTS INFORMATION OFFICE Lamia, June 5, 2026 PRESS RELEASE -32- arrests in regular extended police operations",
+    "details": "Regular extensive operations in Fthiotida region. 32 arrests.",
     "link": "https://www.astynomia.gr/2026/06/05/05-06-2026-32-syllipseis-stis-taktikes-ektetamenes-astynomikes-epicheiriseis-chthes-stin-perifereia-stereas-elladas/",
     "filter_reason": "Raid Indicators (2)",
     "original_desc": "05-06-2026: -32- συλλήψεις στις τακτικές εκτεταμένες αστυνομικές επιχειρήσεις χθες στην Περιφέρεια Στερεάς Ελλάδας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ Λαμία, 5 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ -32- συλλήψεις στις τακτικές εκτεταμένες αστυνομικές επιχειρήσεις χθες στην Περιφέρεια Στερεάς Ελλάδας Συνελήφθησαν : – 32- άτομα και συγκεκριμένα: -7- ημεδαποί και -2- αλλοδαποί, για παραβάσεις της νομοθεσίας περί ναρκωτικών. -2- ημεδαποί, για παράβαση της νομοθεσίας περί όπλων. -5- ημεδαποί και -1- αλλοδαπός, για παραβάσεις του υγειονομικού κανονισμού. -4- ημεδαποί, για παραβάσεις του Κώδικα Οδικής Κυκλοφορίας. -3- ημεδαποί , για παραεμπόριο. -2- ημεδαποί, για παράνομη υπαίθρια κατασκήνωση. -1- ημεδαπός, για ανυποταξία."
-  },
-  {
-    "date": "05 Jun 2026",
-    "loc": "Argolida",
-    "lat": 37.61,
-    "lng": 22.73,
-    "desc": "05-06-2026: Extensive police operation to combat crime in the Peloponnese Region",
-    "offences": "Drugs | Deprivation of identity card | Dangerous driving | Electricity theft | Conviction document | Weapons law violation | Illegal residence",
-    "arrests": "35",
-    "details": "JOURNALISTS INFORMATION OFFICE OF PELOPONNIS Tripoli, June 5, 2026 PRESS RELEASE Extensive police operation to deal with crime in the Peloponnese Region -35- people were arrested",
-    "link": "https://www.astynomia.gr/2026/06/05/05-06-2026-ektetameni-astynomiki-epicheirisi-gia-tin-antimetopisi-tis-egklimatikotitas-stin-perifereia-peloponnisou/",
-    "filter_reason": "Raid Indicators (3)",
-    "original_desc": "05-06-2026: Εκτεταμένη αστυνομική επιχείρηση για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 5 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Εκτεταμένη αστυνομική επιχείρηση για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου Συνελήφθησαν -35- άτομα στην Αργολίδα, Αρκαδία, Κορινθία, Λακωνία και Μεσσηνία για ποικίλα αδικήματα περιλαμβανομένων ναρκωτικών, κλοπής ηλεκτρικής ενέργειας, στέρησης δελτίου ταυτότητας, και παράνομης διαμονής."
+    "original_details": "Συνελήφθησαν : – 32- άτομα..."
   },
   {
     "date": "04 Jun 2026",
     "loc": "Attica",
     "lat": 38.05,
     "lng": 23.75,
-    "desc": "04-06-2026: A special police operation with -7- arrests was carried out in the morning hours of 3-6-2026 in the settlements of Acharna with the aim of...",
-    "offences": "Electricity theft | Traffic violations | Driving license deprivation | Non-use of seat belt/helmet | No vehicle inspection (KTEO)",
+    "desc": "04-06-2026: A special police operation with -7- arrests was carried out in the morning hours of 3-6-2026 in the settlements of Acharna",
+    "offences": "Electricity theft | Traffic violations | Driving license deprivation",
     "arrests": "7",
-    "details": "ATTICA JOURNALISTS' INFORMATION OFFICE Athens, June 4, 2026 PRESS RELEASE A special police operation with -7- arrests was carried out in the morning hours of 6-3-2026 in the settlements of Acharna",
+    "details": "Special operation in Acharna settlements. 7 arrests for electricity theft and traffic violations.",
     "link": "https://www.astynomia.gr/2026/06/04/04-06-2026-eidiki-astynomiki-epicheirisi-me-7-syllipseis-pragmatopoiithike-proines-ores-tis-3-6-2026-se-oikismous-ton-acharnon-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "filter_reason": "Settlement Word: οικισμού",
-    "original_desc": "04-06-2026: Ειδική αστυνομική επιχείρηση με -7- συλλήψεις πραγματοποιήθηκε πρωινές ώρες της 3-6-2026 σε οικισμούς των Αχαρνών με σκοπό την...",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 4 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική αστυνομική επιχείρηση με -7- συλλήψεις πραγματοποιήθηκε πρωινές ώρες της 3-6-2026 σε οικισμούς των Αχαρνών με σκοπό την αποτροπή κάθε μορφής παράνομης δραστηριότητας Διενεργήθηκαν αποξηλώσεις καλωδίων μήκους -1.806- μέτρων που χρησιμοποιούνταν για ρευματοκλοπές Συνελήφθησαν συνολικά -7- άτομα για κλοπή ηλεκτρικής ενέργειας και παράβαση του Κώδικα Οδικής Κυκλοφορίας."
-  },
-  {
-    "date": "04 Jun 2026",
-    "loc": "Argolida",
-    "lat": 37.61,
-    "lng": 22.73,
-    "desc": "04-06-2026: A targeted police operation took place in Argolis",
-    "offences": "Health regulation violation | Electricity theft | Deprivation of identity card | Neglect of minor supervision | Insubordination",
-    "arrests": "6",
-    "details": "JOURNALISTS INFORMATION OFFICE OF PELOPONNIS Tripoli, June 4, 2026 PRESS RELEASE Targeted police operation was carried out in Argolis In the context of the operation a total of -6- people were arrested",
-    "link": "https://www.astynomia.gr/2026/06/04/04-06-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
-    "filter_reason": "Raid Indicators (6)",
-    "original_desc": "04-06-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 4 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα Στο πλαίσιο της επιχείρησης συνελήφθησαν συνολικά -6- άτομα για τα κάτωθι αδικήματα: -2- άτομα, για παράβαση του Υγειονομικού Κανονισμό, -1- άτομο,για κλοπή ηλεκτρικής ενέργειας, -1- άτομο, για στέρηση δελτίου ταυτότητας, -1- άτομο, για παραμέληση εποπτείας ανηλίκου και -1- άτομο, για ανυποταξία στο εσωτερικό."
+    "original_desc": "04-06-2026: Ειδική αστυνομική επιχείρηση με -7- συλλήψεις πραγματοποιήθηκε πρωινές ώρες της 3-6-2026 σε οικισμούς των Αχαρνών",
+    "original_details": "Συνελήφθησαν συνολικά -7- άτομα για κλοπή ηλεκτρικής ενέργειας και παράβαση του Κώδικα Οδικής Κυκλοφορίας."
   },
   {
     "date": "03 Jun 2026",
     "loc": "Thessaloniki",
     "lat": 40.64,
     "lng": 22.94,
-    "desc": "03-06-2026: A police operation was carried out in the settlement of Perea to prevent and deal with crime and to consolidate a sense of...",
+    "desc": "03-06-2026: A police operation was carried out in the settlement of Perea",
     "offences": "Electricity theft cases | Traffic violations",
     "arrests": "0",
-    "details": "THESSALONIKI JOURNALISTS' INFORMATION OFFICE Thessaloniki, June 03, 2026 PRESS RELEASE A police operation was carried out in the settlement of Peraia to prevent and deal with crime and to establish a sense of security among citizens A total of 64 people and 46 vehicles were checked In the context of the operation: (14) violations of the C.O.K. (4) cases of electricity theft were detected",
+    "details": "64 people and 46 vehicles checked. 4 cases of electricity theft detected.",
     "link": "https://www.astynomia.gr/2026/06/03/03-06-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "filter_reason": "Settlement Word: οικισμό",
-    "original_desc": "03-06-2026:  Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας για την πρόληψη και αντιμετώπιση της εγκληματικότητας και την εδραίωση αισθήματος...",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΘΕΣΣΑΛΟΝΙΚΗΣ Θεσσαλονίκη, 03 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας για την πρόληψη και αντιμετώπιση της εγκληματικότητας και την εδραίωση αισθήματος ασφάλειας στους πολίτες Ελέγχθηκαν συνολικά 64 άτομα και 46 οχήματα Στο πλαίσιο της επιχείρησης: Βεβαιώθηκαν (14) παραβάσεις του Κ.Ο.Κ. Διαπιστώθηκαν (4) περιπτώσεις ρευματοκλοπής και Ακινητοποιήθηκαν (14) οχήματα."
+    "original_desc": "03-06-2026: Πραγματοποιήθηκε αστυνομική επιχείρηση σε οικισμό της Περαίας",
+    "original_details": "Διαπιστώθηκαν (4) περιπτώσεις ρευματοκλοπής."
   },
   {
     "date": "03 Jun 2026",
@@ -119,11 +189,11 @@
     "desc": "03-06-2026: Targeted police operations were carried out in Argolis and Corinthia",
     "offences": "Electricity theft | Health regulation violation | Conviction document",
     "arrests": "8",
-    "details": "JOURNALISTS INFORMATION OFFICE OF PELOPONNIS Tripoli, June 3, 2026 PRESS RELEASE Targeted police operations were carried out in Argolis and Corinth As part of the operations, a total of -8- people were arrested",
+    "details": "Operations in Argolis (5 arrests) and Corinthia (3 arrests).",
     "link": "https://www.astynomia.gr/2026/06/03/03-06-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "filter_reason": "Raid Indicators (6)",
     "original_desc": "03-06-2026: Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αργολίδα και στην Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 3 Ιουνίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αργολίδα και στην Κορινθία Στο πλαίσιο των επιχειρήσεων συνελήφθησαν συνολικά -8- άτομα Στην Αργολίδα συνελήφθησαν -5- άτομα για τα κάτωθι αδικήματα: -2- άτομα, για κλοπή ηλεκτρικής ενέργειας, -2- άτομα, για παράβαση του Υγειονομικού Κανονισμού και -1- άτομο, για καταδικαστικό έγγραφο. Στην Κορινθία συνελήφθησαν -3- άτομα, για κλοπή ηλεκτρικής ενέργειας."
+    "original_details": "Συνελήφθησαν συνολικά -8- άτομα..."
   },
   {
     "date": "30 May 2026",
@@ -133,24 +203,10 @@
     "desc": "Targeted operation in Argos-Mycenae and Nafplio municipalities",
     "offences": "Electricity theft | Health regulation violation | Conviction document | Insubordination | Neglect of minor supervision",
     "arrests": "5",
-    "details": "Targeted operation in Argos-Mycenae and Nafplio municipalities. 22 people checked, 6 brought in, 5 arrested. Electrical cables seized.",
+    "details": "22 people checked, 5 arrested.",
     "link": "https://www.astynomia.gr/2026/05/30/30-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
     "original_desc": "30-05-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 30 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση στην Αργολίδα συνολικά -5- άτομα για αδικήματα περιλαμβανομένων κλοπής ηλεκτρικής ενέργειας, παράβασης Υγειονομικού Κανονισμού, καταδικαστικού εγγράφου."
-  },
-  {
-    "date": "30 May 2026",
-    "loc": "Argolida",
-    "lat": 37.61,
-    "lng": 22.73,
-    "desc": "30-05-2026: Wide police operations to deal with crime in the Peloponnese Region",
-    "offences": "Drugs | Theft | Electricity theft | Conviction document | Traffic violations | Illegal residence | Weapons law violation",
-    "arrests": "35",
-    "details": "JOURNALISTS INFORMATION OFFICE OF PELOPONNIS Tripoli, May 30, 2026 PRESS RELEASE Broad police operations to deal with crime in the Peloponnese Region -35- people were arrested",
-    "link": "https://www.astynomia.gr/2026/05/30/30-05-2026-evreies-astynomikes-epicheiriseis-gia-tin-antimetopisi-tis-egklimatikotitas-stin-perifereia-peloponnisou/",
-    "filter_reason": "Raid Indicators (2)",
-    "original_desc": "30-05-2026: Ευρείες αστυνομικές επιχειρήσεις για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 30 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ευρείες αστυνομικές επιχειρήσεις για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου Συνελήφθησαν -35- άτομα Αργολίδας, Αρκαδίας, Κορινθίας, Λακωνίας και Μεσσηνίας για ναρκωτικά, κλοπή, κλοπή ηλεκτρικής ενέργειας, καταδικαστικό έγγραφο, και παράνομη διαμονή."
+    "original_details": "Συνολικά -5- άτομα για αδικήματα περιλαμβανομένων κλοπής ηλεκτρικής ενέργειας..."
   },
   {
     "date": "29 May 2026",
@@ -160,10 +216,10 @@
     "desc": "Traffic control op, no arrests",
     "offences": "Traffic violations | Vehicle immobilization",
     "arrests": "0",
-    "details": "Police operation in two settlements of Chalkidona municipality. 82 people checked, 73 vehicles, 19 traffic violations recorded, 12 vehicles immobilized.",
+    "details": "82 people checked, 12 vehicles immobilized.",
     "link": "https://www.astynomia.gr/2026/05/30/30-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-periochi-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "30-05-2026: Αστυνομική επιχείρηση σε περιοχή του Δήμου Χαλκηδόνας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 30 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Αστυνομική επιχείρηση σε περιοχές του Δήμου Χαλκηδόνας ελέγχθηκαν 82 άτομα και 73 οχήματα βεβαιώθηκαν 19 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 12 οχήματα."
+    "original_details": "Βεβαιώθηκαν 19 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 12 οχήματα."
   },
   {
     "date": "29 May 2026",
@@ -173,10 +229,10 @@
     "desc": "Preventive controls, no arrests",
     "offences": "Traffic violations | Vehicle immobilization",
     "arrests": "0",
-    "details": "Coordinated police operation in Diavata settlement. 63 people checked, 57 vehicles, 13 traffic violations recorded, 13 vehicles immobilized.",
+    "details": "63 people checked, 13 vehicles immobilized.",
     "link": "https://www.astynomia.gr/2026/05/29/29-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "29-05-2026: Αστυνομική επιχείρηση σε οικισμό των Διαβάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 29 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συντονισμένη αστυνομική επιχείρηση σε οικισμό των Διαβάτων ελέγχθηκαν 63 άτομα και 57 οχήματα βεβαιώθηκαν 13 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 13 οχήματα."
+    "original_details": "Βεβαιώθηκαν 13 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 13 οχήματα."
   },
   {
     "date": "29 May 2026",
@@ -186,10 +242,10 @@
     "desc": "5 arrests, electricity theft focus",
     "offences": "Electricity theft | Health regulation violation | Illegal street trading",
     "arrests": "5",
-    "details": "Targeted operations over three-day period (27-29 May). 32 people checked, 16 vehicles, 11 homes searched. 5 arrests: 3 for electricity theft, 1 for health regulation violation, 1 for street trading.",
+    "details": "32 people checked, 5 arrested.",
     "link": "https://www.astynomia.gr/2026/05/29/29-05-2026-5-syllipseis-sto-plaisio-stochevmenon-astynomikon-epicheiriseon-pou-pragmatopoiithikan-se-oikismous-periochon-tis-fthiotidas/",
     "original_desc": "29-05-2026: 5 συλλήψεις στο πλαίσιο στοχευμένων αστυνομικών επιχειρήσεων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ Λαμία, 29 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ 5 συλλήψεις στο πλαίσιο στοχευμένων επιχειρήσεων σε οικισμούς Φθιώτιδας 3 για ρευματοκλοπή, 1 για παράβαση Υγειονομικού Κανονισμού, 1 για παράνομο υπαίθριο εμπόριο."
+    "original_details": "3 για ρευματοκλοπή, 1 για παράβαση Υγειονομικού Κανονισμού, 1 για παράνομο υπαίθριο εμπόριο."
   },
   {
     "date": "29 May 2026",
@@ -199,10 +255,10 @@
     "desc": "6 arrests, electricity theft focus",
     "offences": "Electricity theft | Theft | Traffic violations",
     "arrests": "6",
-    "details": "Targeted operation in Corinthia settlements. 21 people checked, 7 brought in, 6 arrested (3 for electricity theft, 3 for theft). 10 traffic violations recorded.",
+    "details": "21 people checked, 6 arrested.",
     "link": "https://www.astynomia.gr/2026/05/29/29-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-korinthia/",
     "original_desc": "29-05-2026: Στοχευμένη αστυνομική επιχείρηση στην Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 29 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση σε οικισμούς Κορινθίας συνελήφθησαν 6 άτομα 3 για κλοπή ηλεκτρικής ενέργειας και 3 για κλοπή."
+    "original_details": "Συνελήφθησαν 6 άτομα 3 για κλοπή ηλεκτρικής ενέργειας και 3 για κλοπή."
   },
   {
     "date": "28 May 2026",
@@ -212,10 +268,10 @@
     "desc": "Special op with drone, 9 arrests",
     "offences": "Electricity theft | Domestic violence offences",
     "arrests": "9",
-    "details": "Special police operation involving tactical units, K-9 dogs, and UAV (drone). 9 arrests made for electricity theft and domestic violence offences.",
+    "details": "Special operation with tactical units, K-9 dogs, and UAV. 9 arrests.",
     "link": "https://www.astynomia.gr/2026/05/29/29-05-2026-eidiki-astynomiki-epicheirisi-me-9-syllipseis-pragmatopoiithike-proines-ores-tis-28-5-2026-se-oikismous-tou-aspropyrgou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "original_desc": "29-05-2026: Ειδική αστυνομική επιχείρηση με 9 συλλήψεις στα Άνω Πέραμα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 29 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική αστυνομική επιχείρηση με συμμετοχή τακτικών μονάδων, αστυνομικών σκύλων και UAV ( drones ) συνελήφθησαν 9 άτομα για κλοπή ηλεκτρικής ενέργειας και αδικήματα ενδοοικογενειακής βίας."
+    "original_details": "Συνελήφθησαν 9 άτομα για κλοπή ηλεκτρικής ενέργειας και αδικήματα ενδοοικογενειακής βίας."
   },
   {
     "date": "28 May 2026",
@@ -225,10 +281,10 @@
     "desc": "Preventive controls, no arrests",
     "offences": "Traffic violations | Vehicle immobilization",
     "arrests": "0",
-    "details": "Coordinated police operation in Diavata settlement. 83 people checked, 59 vehicles, 18 traffic violations recorded, 16 vehicles immobilized.",
+    "details": "83 people checked, 16 vehicles immobilized.",
     "link": "https://www.astynomia.gr/2026/05/28/28-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "28-05-2026: Αστυνομική επιχείρηση σε οικισμό των Διαβάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 28 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συντονισμένη αστυνομική επιχείρηση σε οικισμό των Διαβάτων ελέγχθηκαν 83 άτομα και 59 οχήματα βεβαιώθηκαν 18 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 16 οχήματα."
+    "original_details": "Βεβαιώθηκαν 18 παραβάσεις Κ.Ο.Κ. και ακινητοποιήθηκαν 16 οχήματα."
   },
   {
     "date": "27 May 2026",
@@ -238,10 +294,10 @@
     "desc": "12 arrests, multi-regional op",
     "offences": "Water theft | Electricity theft",
     "arrests": "12",
-    "details": "Targeted operations in Argos-Mycenae, Nafplio, and Eurotas municipalities. 21 people checked in Argolida (6 arrested), 19 in Laconia (6 arrested for water theft). Electrical cables seized.",
+    "details": "Operations in Argos-Mycenae, Nafplio, and Eurotas. 6 in Argolida, 6 in Laconia.",
     "link": "https://www.astynomia.gr/2026/05/27/27-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-sti-lakonia/",
     "original_desc": "27-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και στη Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 27 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες επιχειρήσεις σε δήμους Άργους-Μυκηνών, Ναυπλιέων και Ευρώτα 12 συλλήψεις 6 στην Αργολίδα και 6 στη Λακωνία για νεροκλοπή και ρευματοκλοπή."
+    "original_details": "12 συλλήψεις 6 στην Αργολίδα και 6 στη Λακωνία για νεροκλοπή και ρευματοκλοπή."
   },
   {
     "date": "26 May 2026",
@@ -251,23 +307,10 @@
     "desc": "Traffic control op, no arrests",
     "offences": "Traffic violations",
     "arrests": "0",
-    "details": "Coordinated police operation in Evosmos area. 114 people checked, 82 vehicles, 25 traffic violations recorded.",
+    "details": "114 people checked, 25 traffic violations recorded.",
     "link": "https://www.astynomia.gr/2026/05/26/26-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-periochi-tou-evosmou-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "26-05-2026: Αστυνομική επιχείρηση σε περιοχή του Εύοσμου",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 26 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συντονισμένη αστυνομική επιχείρηση στην περιοχή του Εύοσμου ελέγχθηκαν 114 άτομα και 82 οχήματα βεβαιώθηκαν 25 παραβάσεις Κ.Ο.Κ."
-  },
-  {
-    "date": "26 May 2026",
-    "loc": "Argolida",
-    "lat": 37.61,
-    "lng": 22.73,
-    "desc": "28 arrests, large regional op",
-    "offences": "Multiple offences including drugs, theft, electricity theft",
-    "arrests": "28",
-    "details": "Large-scale coordinated operation across four prefectures. Multiple municipalities targeted. Combined arrests: 6 in Argolida, 2 in Arcadia, 8 in Corinthia, 12 in Messinia. Multiple traffic violations recorded across all regions.",
-    "link": "https://www.astynomia.gr/2026/05/26/26-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-stin-korinthia-kai-sti-messinia/",
-    "original_desc": "26-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία, Κορινθία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 26 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες επιχειρήσεις σε Αργολίδα, Αρκαδία, Κορινθία και Μεσσηνία 28 συλλήψεις 6 στην Αργολίδα, 2 στην Αρκαδία, 8 στην Κορινθία και 12 στη Μεσσηνία."
+    "original_details": "Βεβαιώθηκαν 25 παραβάσεις Κ.Ο.Κ."
   },
   {
     "date": "25 May 2026",
@@ -277,10 +320,10 @@
     "desc": "Targeted operation in Pyrgos municipality with DEH cooperation",
     "offences": "Health regulation violations regarding illegal settlements | Electricity theft",
     "arrests": "9",
-    "details": "Targeted operation in Pyrgos municipality involving DEH (electricity utility) personnel. Police checked 154 individuals and 90 vehicles, conducted 12 home searches, brought in 11, and arrested 9 for health regulation violations regarding illegal settlements (6) and electricity theft (3). 36 traffic violations were also recorded.",
+    "details": "Pyrgos municipality. 154 individuals checked, 9 arrested.",
     "link": "https://www.astynomia.gr/2026/05/25/25-05-2026-stochevmeni-astynomiki-epicheirisi-stin-ileia-gia-tin-antimetopisi-tis-egklimatikotitas/",
     "original_desc": "25-05-2026: Στοχευμένη αστυνομική επιχείρηση στην Ηλεία για την αντιμετώπιση της εγκληματικότητας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ Πάτρα, 25 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση στον Πύργο Ηλείας με συνεργασία ΔΕΗ συνελήφθησαν 9 άτομα 6 για παραβάσεις υγειονομικού κανονισμού σχετικά με παράνομες συνοικίες και 3 για ρευματοκλοπή."
+    "original_details": "Συνελήφθησαν 9 άτομα 6 για παραβάσεις υγειονομικού κανονισμού σχετικά με παράνομες συνοικίες και 3 για ρευματοκλοπή."
   },
   {
     "date": "23 May 2026",
@@ -290,10 +333,10 @@
     "desc": "Targeted operation in Argos-Mycenae and Nafplio municipalities",
     "offences": "Lack of ID cards | Health regulation violations | Electricity theft | Neglect of minor supervision",
     "arrests": "6",
-    "details": "Targeted operation conducted in settlements in Argos-Mycenae and Nafplio. Police checked 21 individuals, brought in 7, and arrested 6 for lack of ID cards (2), health regulation violations (2), electricity theft (1), and neglect of minor supervision (1). Illegal electrical cables were seized.",
+    "details": "21 individuals checked, 6 arrested.",
     "link": "https://www.astynomia.gr/2026/05/23/23-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
     "original_desc": "23-05-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 23 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση σε οικισμούς Άργους-Μυκηνών και Ναυπλίου συνελήφθησαν 6 άτομα για έλλειψη ταυτοτήτων, παραβάσεις υγειονομικού κανονισμού, ρευματοκλοπή και παραμέληση εποπτείας ανηλίκου."
+    "original_details": "Συνελήφθησαν 6 άτομα για έλλειψη ταυτοτήτων, παραβάσεις υγειονομικού κανονισμού, ρευματοκλοπή και παραμέληση εποπτείας ανηλίκου."
   },
   {
     "date": "22 May 2026",
@@ -303,11 +346,11 @@
     "desc": "05-22-2026: A large-scale police operation was carried out in areas of Thessaly, to prevent and suppress crime",
     "offences": "Drug legislation violation | Weapons legislation violation | Electricity theft | Theft | Insubordination | Driving with revoked license | Violation of health certificate",
     "arrests": "16",
-    "details": "THESSALIA JOURNALISTS INFORMATION OFFICE Larisa, May 22, 2026 PRESS RELEASE A wide police operation was carried out in areas of Thessaly, to prevent and suppress crime A total of -16- people were arrested Seized -83- grams of raw cannabis, -3- cultivated cannabis seedlings and -2- weapons -147- traffic violations were confirmed, while -10- vehicles were immobilized",
+    "details": "Large-scale operation in Thessaly. 16 arrests.",
     "link": "https://www.astynomia.gr/2026/05/22/22-05-2026-evreia-astynomiki-epicheirisi-pragmatopoiithike-se-perioches-tis-thessalias-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas/",
     "filter_reason": "Raid Indicators (2): ['κλοπή ηλεκτρικής ενέργειας', 'προσήχθησαν']",
     "original_desc": "22-05-2026: Ευρεία αστυνομική επιχείρηση πραγματοποιήθηκε σε περιοχές της Θεσσαλίας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΘΕΣΣΑΛΙΑΣ Λάρισα, 22 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ευρεία αστυνομική επιχείρηση σε περιοχές της Θεσσαλίας συνελήφθησαν 16 άτομα 2 για ναρκωτικά, 2 για όπλα, 3 για ρευματοκλοπή, 1 για κλοπή, 6 για ανυποταξία, 1 για οδηγία με ανακληθείσα άδεια και 1 για παραβίαση πιστοποιητικού υγείας."
+    "original_details": "Συνελήφθησαν 16 άτομα..."
   },
   {
     "date": "21 May 2026",
@@ -317,10 +360,10 @@
     "desc": "Generalized preventive policing",
     "offences": "Traffic violations | Administrative offences",
     "arrests": "6",
-    "details": "Generalized preventive policing operation in Peraia targeting traffic violations and administrative offences.",
+    "details": "Generalized preventive policing operation in Peraia. 6 arrests.",
     "link": "https://www.astynomia.gr/2026/05/21/21-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "21-05-2026: Αστυνομική επιχείρηση σε οικισμό της Περαίας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 21 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Γενικευμένη αστυνόμευση προληπτικού χαρακτήρα σε οικισμό της Περαίας με στόχο τις παραβάσεις Κ.Ο.Κ. και διοικητικές υποθέσεις. Συνελήφθησαν 6 άτομα."
+    "original_details": "Συνελήφθησαν 6 άτομα."
   },
   {
     "date": "21 May 2026",
@@ -330,10 +373,10 @@
     "desc": "Targeted operation in Velou-Voha and Sikyonion municipalities",
     "offences": "Electricity theft | Lack of ID cards | Traffic violations",
     "arrests": "8",
-    "details": "Targeted operation conducted in settlements in Velou-Voha and Sikyonion. Police checked 22 individuals, brought in 8, and arrested 8 for electricity theft (4), lack of ID cards (3), and traffic violations (1). 9 traffic violations were also recorded.",
+    "details": "8 arrests in Velou-Voha and Sikyonion.",
     "link": "https://www.astynomia.gr/2026/05/21/21-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-korinthia/",
     "original_desc": "21-05-2026: Στοχευμένη αστυνομική επιχείρηση στην Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 21 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση σε οικισμούς Βέλου-Βόχας και Σικυωνίων συνελήφθησαν 8 άτομα 4 για ρευματοκλοπή, 3 για έλλειψη ταυτοτήτων και 1 για παραβάσεις Κ.Ο.Κ."
+    "original_details": "Συνελήφθησαν 8 άτομα 4 για ρευματοκλοπή, 3 για έλλειψη ταυτοτήτων και 1 για παραβάσεις Κ.Ο.Κ."
   },
   {
     "date": "20 May 2026",
@@ -343,10 +386,10 @@
     "desc": "Multi-regional op",
     "offences": "Administrative violations | Identity checks",
     "arrests": "12",
-    "details": "Multi-regional operation spanning Argolida, Arcadia, and Laconia.",
+    "details": "Multi-regional operation spanning Argolida, Arcadia, and Laconia. 12 arrests.",
     "link": "https://www.astynomia.gr/2026/05/20/20-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-kai-sti-lakonia/",
     "original_desc": "20-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία και Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 20 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες επιχειρήσεις σε Αργολίδα, Αρκαδία και Λακωνία με ελέγχους ταυτοτήτων και συνολικά 12 συλλήψεις."
+    "original_details": "Συνολικά 12 συλλήψεις."
   },
   {
     "date": "20 May 2026",
@@ -356,10 +399,10 @@
     "desc": "Northern Greece pattern",
     "offences": "Preventive policing | Identity checks",
     "arrests": "8",
-    "details": "Operation in Dendropotamos following the Northern Greece pattern of preventive policing.",
+    "details": "Operation in Dendropotamos. 8 arrests.",
     "link": "https://www.astynomia.gr/2026/05/20/20-05-2026-pragmatopoiithike-astynomiki-epicheirisi-stin-periochi-tou-dendropotamou-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "20-05-2026: Αστυνομική επιχείρηση στην περιοχή του Δενδροποτάμου",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 20 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Αστυνομική επιχείρηση στον Δεντροπόταμο με προληπτικό χαρακτήρα και 8 συλλήψεις."
+    "original_details": "8 συλλήψεις."
   },
   {
     "date": "19 May 2026",
@@ -369,10 +412,10 @@
     "desc": "Regional sweep",
     "offences": "Identity checks | Preventive policing",
     "arrests": "16",
-    "details": "Large regional sweep across Argolida, Corinthia, and Messinia involving identity checks and preventive policing.",
+    "details": "Large regional sweep across Argolida, Corinthia, and Messinia. 16 arrests.",
     "link": "https://www.astynomia.gr/2026/05/19/19-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-messinia/",
     "original_desc": "19-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 19 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Μεγάλη αστυνομική επιχείρηση σε Αργολίδα, Κορινθία και Μεσσηνία με ελέγχους ταυτοτήτων και 16 συλλήψεις."
+    "original_details": "Μεγάλη αστυνομική επιχείρηση σε Αργολίδα, Κορινθία και Μεσσηνία με ελέγχους ταυτοτήτων και 16 συλλήψεις."
   },
   {
     "date": "19 May 2026",
@@ -382,10 +425,10 @@
     "desc": "Saturation policing",
     "offences": "ID checks | Vehicle checks",
     "arrests": "9",
-    "details": "Saturation policing operation in Diavata with extensive ID and vehicle checks.",
+    "details": "Saturation policing operation in Diavata. 9 arrests.",
     "link": "https://www.astynomia.gr/2026/05/19/19-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "19-05-2026: Αστυνομική επιχείρηση σε οικισμό των Διαβάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 19 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση κορεσμού στα Διάβτα με έντονο έλεγχο ταυτοτήτων και οχημάτων και 9 συλλήψεις."
+    "original_details": "9 συλλήψεις."
   },
   {
     "date": "16 May 2026",
@@ -395,10 +438,10 @@
     "desc": "Latest continuation",
     "offences": "Campaign continuation",
     "arrests": "4",
-    "details": "Latest continuation of the ongoing campaign in Argolida and Corinthia.",
+    "details": "Continuation of the ongoing campaign in Argolida and Corinthia. 4 arrests.",
     "link": "https://www.astynomia.gr/2026/05/16/16-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "16-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 16 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συνέχιση της εκστρατείας σε Αργολίδα και Κορινθία με 4 συλλήψεις."
+    "original_details": "Συνέχιση της εκστρατείας σε Αργολίδα και Κορινθία με 4 συλλήψεις."
   },
   {
     "date": "15 May 2026",
@@ -408,10 +451,10 @@
     "desc": "Same logic as Diavata",
     "offences": "Preventive policing",
     "arrests": "5",
-    "details": "Operation in Peraia following the same logic and pattern as recent raids in Diavata.",
+    "details": "Operation in Peraia following the same logic and pattern as recent raids in Diavata. 5 arrests.",
     "link": "https://www.astynomia.gr/2026/05/16/16-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-tis-peraias-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "16-05-2026: Αστυνομική επιχείρηση σε οικισμό της Περαίας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 16 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Αστυνομική επιχείρηση στην Περαία ακολουθώντας το ίδιο μοτίβο με τα Διάβτα. 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "14 May 2026",
@@ -421,10 +464,10 @@
     "desc": "Further op days after previous",
     "offences": "Preventive controls",
     "arrests": "8",
-    "details": "Further operation in Diavata days after the previous one.",
+    "details": "Further operation in Diavata. 8 arrests.",
     "link": "https://www.astynomia.gr/2026/05/15/15-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "15-05-2026: Αστυνομική επιχείρηση σε οικισμό των Διαβάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 15 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Νέα αστυνομική επιχείρηση στα Διάβτα λίγες ημέρες μετά την προηγούμενη. 8 συλλήψεις."
+    "original_details": "8 συλλήψεις."
   },
   {
     "date": "14 May 2026",
@@ -437,9 +480,9 @@
     "details": "Nine arrests made by tactical units in Aspropyrgos.",
     "link": "https://www.astynomia.gr/2026/05/16/16-05-2026-eidiki-astynomiki-epicheirisi-me-9-syllipseis-pragmatopoiithike-proines-ores-tis-14-5-2026-se-oikismous-tou-aspropyrgou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "original_desc": "16-05-2026: Ειδική αστυνομική επιχείρηση με 9 συλλήψεις στα Άνω Πέραμα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 16 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική επιχείρηση τακτικών μονάδων στα Άνω Πέραμα με 9 συλλήψεις."
+    "original_details": "9 συλλήψεις."
   },
-  {
+    {
     "date": "13 May 2026",
     "loc": "Argolida",
     "lat": 37.61,
@@ -447,10 +490,10 @@
     "desc": "Repeat op, same language",
     "offences": "Administrative violations",
     "arrests": "5",
-    "details": "Repeat operation using the same language as previous reports.",
+    "details": "Repeat operation in Argolida and Corinthia. 5 arrests.",
     "link": "https://www.astynomia.gr/2026/05/13/13-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "13-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 13 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συνέχιση της εκστρατείας με 5 συλλήψεις."
+    "original_details": "Συνέχιση της εκστρατείας με 5 συλλήψεις."
   },
   {
     "date": "13 May 2026",
@@ -460,23 +503,10 @@
     "desc": "Sustained rolling ops",
     "offences": "Preventive policing",
     "arrests": "6",
-    "details": "Sustained rolling operations in Chalkidona.",
+    "details": "Sustained rolling operations in Chalkidona. 6 arrests.",
     "link": "https://www.astynomia.gr/2026/05/13/13-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "13-05-2026: Αστυνομικές επιχειρήσεις σε περιοχές του Δήμου Χαλκηδόνας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 13 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Αστυνομικές επιχειρήσεις με 6 συλλήψεις."
-  },
-  {
-    "date": "12 May 2026",
-    "loc": "Argolida",
-    "lat": 37.61,
-    "lng": 22.73,
-    "desc": "Coordinated regional op",
-    "offences": "Multiple administrative violations",
-    "arrests": "20",
-    "details": "Coordinated regional operation across four prefectures.",
-    "link": "https://www.astynomia.gr/2026/05/12/12-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-sti-lakonia-kai-sti-messinia/",
-    "original_desc": "12-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία, Λακωνία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 12 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συντονισμένη επιχείρηση 20 συλλήψεις."
+    "original_details": "Αστυνομικές επιχειρήσεις με 6 συλλήψεις."
   },
   {
     "date": "12 May 2026",
@@ -486,10 +516,10 @@
     "desc": "Settlement long associated with Roma",
     "offences": "Preventive policing",
     "arrests": "7",
-    "details": "Operation in Dendropotamos, a settlement long associated with Roma.",
+    "details": "Operation in Dendropotamos. 7 arrests.",
     "link": "https://www.astynomia.gr/2026/05/12/12-05-2026-pragmatopoiithike-astynomiki-epicheirisi-stin-periochi-tou-dendropotamou-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos/",
     "original_desc": "12-05-2026: Αστυνομική επιχείρηση στην περιοχή του Δενδροποτάμου",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 12 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση στον Δεντροπόταμο με 7 συλλήψεις."
+    "original_details": "7 συλλήψεις."
   },
   {
     "date": "9 May 2026",
@@ -499,10 +529,10 @@
     "desc": "Repeat targeted op",
     "offences": "Administrative violations",
     "arrests": "4",
-    "details": "Repeat targeted operation in Argolida.",
+    "details": "Repeat targeted operation in Argolida. 4 arrests.",
     "link": "https://www.astynomia.gr/2026/05/09/09-05-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
     "original_desc": "09-05-2026: Στοχευμένη αστυνομική επιχείρηση στην Αργολίδα",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 9 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη επιχείρηση με 4 συλλήψεις."
+    "original_details": "4 συλλήψεις."
   },
   {
     "date": "8 May 2026",
@@ -512,10 +542,10 @@
     "desc": "Consecutive op",
     "offences": "Preventive policing",
     "arrests": "6",
-    "details": "Consecutive operation in Diavata.",
+    "details": "Consecutive operation in Diavata. 6 arrests.",
     "link": "https://www.astynomia.gr/2026/05/08/08-05-2026-pragmatopoiithike-astynomiki-epicheirisi-se-oikismo-ton-diavaton-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "08-05-2026: Αστυνομική επιχείρηση σε οικισμό των Διαβάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 8 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 6 συλλήψεις."
+    "original_details": "6 συλλήψεις."
   },
   {
     "date": "8 May 2026",
@@ -525,10 +555,10 @@
     "desc": "Targeted anti-crime",
     "offences": "Administrative violations",
     "arrests": "8",
-    "details": "Targeted anti-crime operation in Aigialeia.",
+    "details": "Targeted anti-crime operation in Aigialeia. 8 arrests.",
     "link": "https://www.astynomia.gr/2026/05/08/08-05-2026-stochevmeni-astynomiki-epicheirisi-gia-tin-egklimatikotita-stin-aigialeia/",
     "original_desc": "08-05-2026: Στοχευμένη αστυνομική επιχείρηση για την εγκληματικότητα στην Αιγιαλεία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΔΥΤΙΚΗΣ ΕΛΛΑΔΑΣ Πάτρα, 8 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 8 συλλήψεις."
+    "original_details": "8 συλλήψεις."
   },
   {
     "date": "8 May 2026",
@@ -538,10 +568,10 @@
     "desc": "11 arrests, western Attica",
     "offences": "Electricity theft | Traffic violations",
     "arrests": "11",
-    "details": "11 arrests in Megara and Nea Peramos in western Attica.",
+    "details": "Special operation in Megara and Nea Peramos. 11 arrests.",
     "link": "https://www.astynomia.gr/2026/05/11/11-05-2026-eidiki-astynomiki-epicheirisi-me-11-syllipseis-pragmatopoiithike-proines-ores-tis-8-5-2026-se-oikismous-ton-megaron-kai-tis-neas-peramou-me-skopo-tin-apotropi-kathe-morfis-paranomis-dras/",
     "original_desc": "11-05-2026: Ειδική αστυνομική επιχείρηση με 11 συλλήψεις στα Μέγαρα και τη Νέα Πέραμο",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 11 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική επιχείρηση με 11 συλλήψεις."
+    "original_details": "11 συλλήψεις."
   },
   {
     "date": "7 May 2026",
@@ -551,10 +581,10 @@
     "desc": "Peloponnese pattern",
     "offences": "Administrative violations | Electricity theft",
     "arrests": "14",
-    "details": "Operations following the Peloponnese pattern across three regions.",
+    "details": "Operations across three regions. 14 arrests.",
     "link": "https://www.astynomia.gr/2026/05/07/07-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/",
     "original_desc": "07-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία και Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 7 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις με 14 συλλήψεις."
+    "original_details": "14 συλλήψεις."
   },
   {
     "date": "6 May 2026",
@@ -564,10 +594,10 @@
     "desc": "Repeat op within days",
     "offences": "Preventive policing",
     "arrests": "5",
-    "details": "Repeat operation in Chalkidona within days of the previous one.",
+    "details": "Repeat operation in Chalkidona. 5 arrests.",
     "link": "https://www.astynomia.gr/2026/05/06/06-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-polites/",
     "original_desc": "06-05-2026: Αστυνομικές επιχειρήσεις σε περιοχές του Δήμου Χαλκηδόνας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 6 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "6 May 2026",
@@ -577,10 +607,10 @@
     "desc": "27 arrests, regional sweep",
     "offences": "Drug legislation violation | Health regulation violation",
     "arrests": "27",
-    "details": "27 arrests made during a regional sweep in Central Greece.",
+    "details": "Regional sweep in Central Greece. 27 arrests.",
     "link": "https://www.astynomia.gr/2026/05/06/06-05-2026-27-syllipseis-stis-taktikes-ektetamenes-astynomikes-epicheiriseis-chthes-stin-perifereia-stereas-elladas/",
     "original_desc": "06-05-2026: 27 συλλήψεις στις τακτικές εκτεταμένες αστυνομικές επιχειρήσεις χθες στην Περιφέρεια Στερεάς Ελλάδας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ Λαμία, 6 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ 27 συλλήψεις στην Περιφέρεια Στερεάς Ελλάδας."
+    "original_details": "27 συλλήψεις στην Περιφέρεια Στερεάς Ελλάδας."
   },
   {
     "date": "6 May 2026",
@@ -590,23 +620,10 @@
     "desc": "Major op, 10 arrests, UAV",
     "offences": "Electricity theft | Administrative violations",
     "arrests": "10",
-    "details": "Major operation in Zefyri involving UAVs (drones). 10 arrests made.",
+    "details": "Major operation in Zefyri involving UAVs. 10 arrests.",
     "link": "https://www.astynomia.gr/2026/05/07/07-05-2026-eidiki-astynomiki-epicheirisi-me-10-syllipseis-pragmatopoiithike-chthes-6-5-2026-to-proi-se-oikismo-tou-zefyriou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "original_desc": "07-05-2026: Ειδική αστυνομική επιχείρηση με 10 συλλήψεις στο Ζεφυρί",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 7 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική επιχείρηση με δόνατες 10 συλλήψεις."
-  },
-   {
-    "date": "5 May 2026",
-    "loc": "Argolida",
-    "lat": 37.5,
-    "lng": 22.37,
-    "desc": "Large regional op",
-    "offences": "Administrative violations | Electricity theft",
-    "arrests": "18",
-    "details": "Large regional operation spanning four prefectures.",
-    "link": "https://www.astynomia.gr/2026/05/05/05-05-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-stin-korinthia-kai-sti-messinia/",
-    "original_desc": "05-05-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία, Κορινθία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 5 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Μεγάλη επιχείρηση σε 4 νομούς με 18 συλλήψεις."
+    "original_details": "10 συλλήψεις."
   },
   {
     "date": "5 May 2026",
@@ -616,10 +633,10 @@
     "desc": "Wide regional sweep",
     "offences": "Drug legislation violation | Electricity theft | Theft",
     "arrests": "22",
-    "details": "Wide regional sweep in Thessaly covering multiple offence types.",
+    "details": "Wide regional sweep in Thessaly. 22 arrests.",
     "link": "https://www.astynomia.gr/2026/05/05/05-05-2026-evreia-astynomiki-epicheirisi-pragmatopoiithike-se-perioches-tis-thessalias-gia-tin-prolipsi-kai-katastoli-tis-egklimatikotitas/",
     "original_desc": "05-05-2026: Ευρεία αστυνομική επιχείρηση σε περιοχές της Θεσσαλίας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΘΕΣΣΑΛΙΑΣ Λάρισα, 5 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ευρεία επιχείρηση με 22 συλλήψεις."
+    "original_details": "22 συλλήψεις."
   },
   {
     "date": "3 May 2026",
@@ -629,10 +646,10 @@
     "desc": "Night raid, 2 arrests",
     "offences": "Electricity theft | Administrative violations",
     "arrests": "2",
-    "details": "Night raid in Fyli resulting in 2 arrests.",
+    "details": "Night raid in Fyli. 2 arrests.",
     "link": "https://www.astynomia.gr/2026/05/04/04-05-2026-eidiki-astynomiki-epicheirisi-me-2-syllipseis-pragmatopoiithike-vradines-ores-chthes-3-5-2026-se-oikismous-tis-fylis-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "original_desc": "04-05-2026: Ειδική αστυνομική επιχείρηση με 2 συλλήψεις στη Φύλη",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 4 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Βραδινή επιχείρηση στη Φύλη με 2 συλλήψεις."
+    "original_details": "2 συλλήψεις."
   },
   {
     "date": "1 May 2026",
@@ -642,10 +659,10 @@
     "desc": "Northern Greece pattern",
     "offences": "Preventive policing",
     "arrests": "4",
-    "details": "Operations in Chalkidona following the Northern Greece pattern.",
+    "details": "Operations in Chalkidona. 4 arrests.",
     "link": "https://www.astynomia.gr/2026/05/01/01-05-2026-pragmatopoiithikan-astynomikes-epicheiriseis-se-perioches-tou-dimou-chalkidonos-gia-tin-prolipsi-kai-antimetopisi-tis-egklimatikotitas-kai-tin-edraiosi-aisthimatos-asfaleias-stous-po/",
     "original_desc": "01-05-2026: Αστυνομικές επιχειρήσεις σε περιοχές του Δήμου Χαλκηδόνας",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΚΕΝΤΡΙΚΗΣ ΜΑΚΕΔΟΝΙΑΣ Θεσσαλονίκη, 1 Μαΐου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 4 συλλήψεις."
+    "original_details": "4 συλλήψεις."
   },
   {
     "date": "24 Apr 2026",
@@ -655,10 +672,10 @@
     "desc": "114 people checked",
     "offences": "Health regulation violations regarding illegal settlements | Electricity theft",
     "arrests": "9",
-    "details": "114 people checked in Pyrgos and Ilia.",
+    "details": "Operation in Pyrgos municipality. 9 arrests.",
     "link": "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/",
     "original_desc": "24-04-2026: 114 άτομα ελέγχθηκαν",
-    "original_details": "Manual entry: Operation in Pyrgos municipality involving DEH personnel. Police checked 154 individuals and 90 vehicles, conducted 12 home searches, brought in 11, and arrested 9 for health regulation violations regarding illegal settlements (6) and electricity theft (3)."
+    "original_details": "9 συλλήψεις."
   },
   {
     "date": "22 Apr 2026",
@@ -668,23 +685,10 @@
     "desc": "Mass ID checks",
     "offences": "Identity checks | Administrative violations",
     "arrests": "8",
-    "details": "Mass ID checks conducted in Argonafplia.",
+    "details": "Mass identity checks in Argos-Mycenae and Nafplion area. 8 arrests recorded.",
     "link": "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/",
     "original_desc": "22-04-2026: Μαζικοί έλεγχοι ταυτοτήτων",
-    "original_details": "Manual entry: Mass identity checks in Argos-Mycenae and Nafplion area. 8 arrests recorded."
-  },
-  {
-    "date": "22 Apr 2026",
-    "loc": "Fthiotida",
-    "lat": 38.89,
-    "lng": 22.43,
-    "desc": "Riot police, house searches",
-    "offences": "Home searches | Electricity theft",
-    "arrests": "5",
-    "details": "Riot police deployed for house searches in Fthiotida.",
-    "link": "https://www.astynomia.gr/2026/04/09/09-04-2026-7-syllipseis-sto-plaisio-stochevmenon-astynomikon-epicheiriseon-pou-pragmatopoiithikan-tin-06-08-04-2026-se-oikismous-periochon-tis-fthiotidas/",
-    "original_desc": "09-04-2026: 7 συλλήψεις στο πλαίσιο στοχευμένων αστυνομικών επιχειρήσεων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ Λαμία, 9 Απριλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με συμμετοχή ΜΑΤ και έλεγχο σπιτιών. 7 συλλήψεις."
+    "original_details": "8 συλλήψεις."
   },
   {
     "date": "21 Apr 2026",
@@ -694,10 +698,10 @@
     "desc": "10 arrests, weapons cited",
     "offences": "Weapons law violation | Electricity theft",
     "arrests": "10",
-    "details": "Ten arrests made. Weapons were cited as a reason for the operation.",
+    "details": "Ten arrests made for weapons and electricity theft.",
     "link": "https://www.astynomia.gr/2026/04/21/21-04-2026-eidiki-astynomiki-epicheirisi-me-10-syllipseis-pragmatopoiithike-simera-21-4-2026-to-proi-se-oikismo-tou-aspropyrgou-me-skopo-tin-apotropi-kathe-morfis-paranomis-drastiriotitas/",
     "original_desc": "21-04-2026: Ειδική αστυνομική επιχείρηση με 10 συλλήψεις",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 21 Απριλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Ειδική επιχείρηση με 10 συλλήψεις για όπλα και ρευματοκλοπή."
+    "original_details": "10 συλλήψεις για όπλα και ρευματοκλοπή."
   },
   {
     "date": "14 Apr 2026",
@@ -707,10 +711,10 @@
     "desc": "Multiple settlements targeted",
     "offences": "Administrative violations | Identity checks",
     "arrests": "6",
-    "details": "Multiple settlements targeted in Kalamata and Messini.",
+    "details": "Operations in Kalamata and Messini targeting specific settlements. 6 arrests.",
     "link": "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/",
     "original_desc": "14-04-2026: Πολλαπλοί οικισμοί στοχοθετήθηκαν",
-    "original_details": "Manual entry: Operations in Kalamata and Messinia targeting specific settlements. 6 arrests."
+    "original_details": "6 συλλήψεις."
   },
   {
     "date": "9 Apr 2026",
@@ -720,10 +724,10 @@
     "desc": "14 homes searched, Roma identified",
     "offences": "Home searches | Electricity theft",
     "arrests": "7",
-    "details": "Fourteen homes searched. Roma community explicitly identified in reports.",
+    "details": "Fourteen homes searched. 7 arrests.",
     "link": "https://www.astynomia.gr/2026/04/09/09-04-2026-7-syllipseis-sto-plaisio-stochevmenon-astynomikon-epicheiriseon-pou-pragmatopoiithikan-tin-06-08-04-2026-se-oikismous-periochon-tis-fthiotidas/",
     "original_desc": "09-04-2026: 7 συλλήψεις",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΣΤΕΡΕΑΣ ΕΛΛΑΔΑΣ Λαμία, 9 Απριλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 7 συλλήψεις σε οικογένειες Ρομά."
+    "original_details": "7 συλλήψεις σε οικογένειες Ρομά."
   },
   {
     "date": "8 Apr 2026",
@@ -733,10 +737,10 @@
     "desc": "230 checks, 46 homes searched",
     "offences": "Home searches | Electricity theft | Illegal residence",
     "arrests": "12",
-    "details": "Massive operation with 230 people checked and 46 homes searched.",
+    "details": "Massive operation in Ano Liosia. 12 arrests.",
     "link": "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/",
     "original_desc": "08-04-2026: 230 έλεγχοι, 46 σπίτια αναζητήθηκαν",
-    "original_details": "Manual entry: Massive operation in Ano Liosia. 230 people checked, 46 homes searched, 12 arrests."
+    "original_details": "12 συλλήψεις."
   },
   {
     "date": "1 Apr 2026",
@@ -746,10 +750,10 @@
     "desc": "Local media identified Roma settlements",
     "offences": "Administrative violations | Identity checks",
     "arrests": "5",
-    "details": "Local media explicitly identified the targets as Roma settlements during the operation.",
+    "details": "Operations in Argolida and Corinthia. 5 arrests.",
     "link": "https://www.astynomia.gr/2026/04/01/01-04-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "01-04-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 1 Απριλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις με 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "12 Mar 2026",
@@ -759,10 +763,10 @@
     "desc": "Continuation of pattern",
     "offences": "Administrative violations",
     "arrests": "3",
-    "details": "Continuation of the established pattern of raids in Argolida and Corinthia.",
+    "details": "Continuation of the established pattern of raids. 3 arrests.",
     "link": "https://www.astynomia.gr/2026/03/12/12-03-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "12-03-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 12 Μαρτίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Συνέχιση εκστρατείας με 3 συλλήψεις."
+    "original_details": "3 συλλήψεις."
   },
   {
     "date": "11 Mar 2026",
@@ -772,12 +776,12 @@
     "desc": "OPKE, dogs, 16 arrests",
     "offences": "Drug possession | Electricity theft",
     "arrests": "16",
-    "details": "OPKE units with K-9 dogs conducted operations resulting in 16 arrests.",
+    "details": "OPKE units with K-9 dogs conducted operations. 16 arrests.",
     "link": "https://www.astynomia.gr/2026/03/11/11-03-2026-eidikes-astynomikes-epicheiriseis-pragmatopoiithikan-se-oikismous-tis-paianias-kai-ton-spaton/",
     "original_desc": "11-03-2026: Ειδικές αστυνομικές επιχειρήσεις σε οικισμούς της Παλαιάς και των Σπάτων",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΑΤΤΙΚΗΣ Αθήνα, 11 Μαρτίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με ΟΠΚΕ και σκύλους με 16 συλλήψεις."
+    "original_details": "16 συλλήψεις."
   },
-   {
+  {
     "date": "26 Feb 2026",
     "loc": "Gastouni",
     "lat": 37.93,
@@ -785,10 +789,10 @@
     "desc": "Armed units, drones deployed",
     "offences": "Organized crime suspicion | Weapons possession",
     "arrests": "4",
-    "details": "Armed units and drones deployed in Gastouni. Suspected organized crime offences cited.",
+    "details": "Armed units and drones deployed. 4 arrests for suspected organized crime.",
     "link": "https://racistcrimeswatch.wordpress.com/2026/05/05/1-1625/",
     "original_desc": "26-02-2026: Όπλιστοι αστυνομικοί και UAV",
-    "original_details": "Manual entry: Operation in Gastouni involving armed units and drones. 4 arrests for suspected organized crime."
+    "original_details": "4 συλλήψεις."
   },
   {
     "date": "25 Feb 2026",
@@ -798,10 +802,10 @@
     "desc": "19 arrests, health violations",
     "offences": "Health regulation violations | Lack of ID cards",
     "arrests": "19",
-    "details": "Nineteen arrests made. Health violations and lack of IDs were primary charges.",
+    "details": "Nineteen arrests made. 19 arrests.",
     "link": "https://www.astynomia.gr/2026/02/25/25-02-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/",
     "original_desc": "25-02-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία και Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 25 Φεβρουαρίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις με 19 συλλήψεις για υγειονομικούς κανονισμούς και έλλειψη ταυτοτήτων."
+    "original_details": "19 συλλήψεις."
   },
   {
     "date": "12 Feb 2026",
@@ -811,10 +815,10 @@
     "desc": "Large regional op",
     "offences": "Water theft | Electricity theft",
     "arrests": "15",
-    "details": "Large-scale regional operation spanning four prefectures. Focus on water and electricity theft.",
+    "details": "Large-scale regional operation spanning four prefectures. 15 arrests.",
     "link": "https://www.astynomia.gr/2026/02/12/12-02-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-sti-lakonia-kai-sti-messinia/",
     "original_desc": "12-02-2026: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία, Λακωνία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 12 Φεβρουαρίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Μεγάλη επιχείρηση σε 4 νομούς με 15 συλλήψεις για νεροκλοπή και ρευματοκλοπή."
+    "original_details": "15 συλλήψεις."
   },
   {
     "date": "31 Dec 2025",
@@ -824,10 +828,10 @@
     "desc": "Cable seizures",
     "offences": "Electricity theft | Administrative violations",
     "arrests": "2",
-    "details": "Seizure of illegal cables used for electricity theft. Administrative offences cited.",
+    "details": "Seizure of illegal cables used for electricity theft. 2 arrests.",
     "link": "https://www.astynomia.gr/2025/12/31/31-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "31-12-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 31 Δεκεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Κατασχέθηκαν καλώδια ρευματοκλοπής. 2 συλλήψεις."
+    "original_details": "2 συλλήψεις."
   },
   {
     "date": "13 Dec 2025",
@@ -837,10 +841,10 @@
     "desc": "Environmental offences, electricity",
     "offences": "Environmental violations | Electricity theft",
     "arrests": "5",
-    "details": "Operations targeting environmental offenses and illegal electricity connections.",
+    "details": "Operations targeting environmental offenses and illegal electricity connections. 5 arrests.",
     "link": "https://www.astynomia.gr/2025/12/13/13-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "13-12-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 13 Δεκεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις για περιβαλλοντικές παραβάσεις και ρευματοκλοπή. 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "11 Dec 2025",
@@ -850,10 +854,10 @@
     "desc": "Preventive controls",
     "offences": "Administrative violations",
     "arrests": "3",
-    "details": "Routine preventive controls conducted in Argolida and Corinthia.",
+    "details": "Routine preventive controls conducted in Argolida and Corinthia. 3 arrests.",
     "link": "https://www.astynomia.gr/2025/12/11/11-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "11-12-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 11 Δεκεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Πρόληψης έλεγχοι με 3 συλλήψεις."
+    "original_details": "3 συλλήψεις."
   },
   {
     "date": "3 Dec 2025",
@@ -863,10 +867,10 @@
     "desc": "Stop and search operation",
     "offences": "Health regulation violations | Electricity theft",
     "arrests": "4",
-    "details": "Stop and search operation targeting health regulation violations and electricity theft.",
+    "details": "Stop and search operation targeting health regulation violations and electricity theft. 4 arrests.",
     "link": "https://www.astynomia.gr/2025/12/03/03-12-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "03-12-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 3 Δεκεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Έλεγχοι για υγειονομικούς κανονισμούς και ρευματοκλοπή. 4 συλλήψεις."
+    "original_details": "4 συλλήψεις."
   },
   {
     "date": "26 Nov 2025",
@@ -876,10 +880,10 @@
     "desc": "Water theft, mass checks",
     "offences": "Water theft | Electricity theft | Identity checks",
     "arrests": "9",
-    "details": "Operations focused on water and electricity theft alongside mass ID checks in Corinthia and Laconia.",
+    "details": "Operations focused on water and electricity theft alongside mass ID checks. 9 arrests.",
     "link": "https://www.astynomia.gr/2025/11/26/26-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-korinthia-kai-sti-lakonia/",
     "original_desc": "26-11-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Κορινθία και τη Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 26 Νοεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις για νεροκλοπή και ρευματοκλοπή. 9 συλλήψεις."
+    "original_details": "9 συλλήψεις."
   },
   {
     "date": "25 Nov 2025",
@@ -889,10 +893,10 @@
     "desc": "13 arrests, multiple municipalities",
     "offences": "Drugs | Illegal street trading | Neglect of minor supervision",
     "arrests": "13",
-    "details": "Thirteen arrests across multiple municipalities. Charges included narcotics, illegal street trading, and neglect of minor supervision.",
+    "details": "Thirteen arrests across multiple municipalities. 13 arrests.",
     "link": "https://www.astynomia.gr/2025/11/25/25-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-arkadia-kai-sti-messinia/",
     "original_desc": "25-11-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 25 Νοεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχειρήσεις με 13 συλλήψεις για ναρκωτικά, παράνομο εμπόριο και παραμέληση ανηλίκων."
+    "original_details": "13 συλλήψεις."
   },
   {
     "date": "12 Nov 2025",
@@ -902,10 +906,10 @@
     "desc": "5 arrests, 'social homogeneity' cited",
     "offences": "Administrative violations",
     "arrests": "5",
-    "details": "Five arrests made. Police reports cited 'social homogeneity' as a justification for the operation.",
+    "details": "Five arrests made. 5 arrests.",
     "link": "https://www.astynomia.gr/2025/11/12/12-11-2025-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-korinthia/",
     "original_desc": "12-11-2025: Στοχευμένη αστυνομική επιχείρηση στην Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 12 Νοεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "11 Nov 2025",
@@ -915,10 +919,10 @@
     "desc": "Early rollout ops",
     "offences": "Preventive policing",
     "arrests": "7",
-    "details": "Early rollout of the campaign in Arcadia, Corinthia, and Messinia. Preventive checks were the primary focus.",
+    "details": "Early rollout of the campaign in Arcadia, Corinthia, and Messinia. 7 arrests.",
     "link": "https://www.astynomia.gr/2025/11/11/11-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-arkadia-stin-korinthia-kai-sti-messinia/",
     "original_desc": "11-11-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αρκαδία, Κορινθία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 11 Νοεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Πρωινη εκστρατεία με 7 συλλήψεις."
+    "original_details": "7 συλλήψεις."
   },
   {
     "date": "6 Nov 2025",
@@ -928,10 +932,10 @@
     "desc": "Post-launch intensified ops",
     "offences": "Administrative violations | Electricity theft",
     "arrests": "6",
-    "details": "Intensified operations following the launch of the wider campaign. Focus on administrative violations and electricity theft.",
+    "details": "Intensified operations following the launch of the wider campaign. 6 arrests.",
     "link": "https://www.astynomia.gr/2025/11/06/06-11-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "06-11-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 6 Νοεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Εντατικοποιημένες επιχειρήσεις μετά την εκστρατεία. 6 συλλήψεις."
+    "original_details": "6 συλλήψεις."
   },
   {
     "date": "17 Oct 2025",
@@ -941,10 +945,10 @@
     "desc": "Regional coordinated op",
     "offences": "Identity checks | Administrative compliance",
     "arrests": "8",
-    "details": "Large regional operation spanning three prefectures. Police conducted mass checks for IDs and administrative compliance.",
+    "details": "Large regional operation spanning three prefectures. 8 arrests.",
     "link": "https://www.astynomia.gr/2025/10/17/17-10-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-messinia/",
     "original_desc": "17-10-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία και Μεσσηνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 17 Οκτωβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Περιφερειακή επιχείρηση με 8 συλλήψεις."
+    "original_details": "8 συλλήψεις."
   },
   {
     "date": "2 Oct 2025",
@@ -954,10 +958,10 @@
     "desc": "ID violations, euphemistic language",
     "offences": "Lack of ID cards | Electricity theft",
     "arrests": "2",
-    "details": "Operations focused on ID violations and electricity theft. Police reports used euphemistic language regarding the nature of the settlements.",
+    "details": "Operations focused on ID violations and electricity theft. 2 arrests.",
     "link": "https://www.astynomia.gr/2025/10/02/02-10-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "02-10-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 2 Οκτωβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση με 2 συλλήψεις."
+    "original_details": "2 συλλήψεις."
   },
   {
     "date": "17 Sep 2025",
@@ -967,10 +971,10 @@
     "desc": "Vehicle inspections, electricity theft",
     "offences": "Vehicle inspections | Electricity theft",
     "arrests": "4",
-    "details": "Coordinated operation across three regions involving vehicle inspections and checks for illegal electricity connections.",
+    "details": "Coordinated operation across three regions. 4 arrests.",
     "link": "https://www.astynomia.gr/2025/09/17/17-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-arkadia-kai-stin-korinthia/",
     "original_desc": "17-09-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Αρκαδία και Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 17 Σεπτεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επιχείρηση ελέγχου οχημάτων και ρευματοκλοπής. 4 συλλήψεις."
+    "original_details": "4 συλλήψεις."
   },
   {
     "date": "9 Sep 2025",
@@ -980,10 +984,10 @@
     "desc": "Repeated ops, same areas",
     "offences": "Administrative violations | Electricity theft",
     "arrests": "3",
-    "details": "Follow-up operations in the same areas as previous raids. Focus remained on administrative violations and illegal electricity usage.",
+    "details": "Follow-up operations in the same areas as previous raids. 3 arrests.",
     "link": "https://www.astynomia.gr/2025/09/09/09-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "09-09-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 9 Σεπτεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Επαναλαμβανόμενες επιχειρήσεις. 3 συλλήψεις."
+    "original_details": "3 συλλήψεις."
   },
   {
     "date": "6 Sep 2025",
@@ -993,10 +997,10 @@
     "desc": "Preventive checks in settlements",
     "offences": "Illegal electricity connections | Environmental violations",
     "arrests": "5",
-    "details": "Preventive checks carried out in settlements in Argolida and Corinthia. Officers inspected illegal electricity connections and checked for environmental violations.",
+    "details": "Preventive checks carried out in settlements. 5 arrests.",
     "link": "https://www.astynomia.gr/2025/09/06/06-09-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-kai-stin-korinthia/",
     "original_desc": "06-09-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα και την Κορινθία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 6 Σεπτεμβρίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Πρόληψης έλεγχοι. 5 συλλήψεις."
+    "original_details": "5 συλλήψεις."
   },
   {
     "date": "13 Jun 2025",
@@ -1006,9 +1010,9 @@
     "desc": "Targeted ops in Argos, Nafplio",
     "offences": "Electricity connections | ID verification",
     "arrests": "2",
-    "details": "Targeted operations conducted in Argos and Nafplio. Police focused on checking electricity connections and verifying identity documents of residents.",
+    "details": "Targeted operations conducted in Argos and Nafplio. 2 arrests.",
     "link": "https://www.astynomia.gr/2025/06/13/13-06-2025-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-argolida-stin-korinthia-kai-sti-lakonia/",
     "original_desc": "13-06-2025: Στοχευμένες αστυνομικές επιχειρήσεις στην Αργολίδα, Κορινθία και Λακωνία",
-    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 13 Ιουνίου 2025 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες επιχειρήσεις με 2 συλλήψεις."
+    "original_details": "2 συλλήψεις."
   }
-  ]
+]
