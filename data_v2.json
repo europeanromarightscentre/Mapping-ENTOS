@@ -1,5 +1,47 @@
 [
   {
+    "date": "25 Jul 2026",
+    "loc": "Argos-Mycenae | Nafplio",
+    "lat": 37.61,
+    "lng": 22.73,
+    "desc": "25-07-2026: Targeted police operation in Argolis",
+    "offences": "Electricity theft | Insubordination | Traffic violations | Health regulation violation",
+    "arrests": 5,
+    "details": "Targeted operation in Argos-Mycenae and Nafplio municipalities. 22 people checked, 5 arrested for electricity theft (2), insubordination (1), traffic violations (1), health regulation breach (1). Operation targeted groups of social homogeneity.",
+    "link": "https://www.astynomia.gr/2026/07/25/25-07-2026-stochevmeni-astynomiki-epicheirisi-pragmatopoiithike-stin-argolida/",
+    "filter_reason": "Raid Indicators",
+    "original_desc": "25-07-2026: Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα",
+    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 25 Ιουλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένη αστυνομική επιχείρηση πραγματοποιήθηκε στην Αργολίδα Στο πλαίσιο της επιχείρησης συνελήφθησαν συνολικά -5- άτομα..."
+  },
+  {
+    "date": "25 Jul 2026",
+    "loc": "Argolis | Arcadia | Corinthia | Laconia | Messinia",
+    "lat": 37.61,
+    "lng": 22.73,
+    "desc": "25-07-2026: Extensive police operation across Peloponnese Region",
+    "offences": "Counterfeit currency circulation | Theft | Drugs | Dangerous driving | Forgery | Illegal residence | Environmental protection violation | Illegal camping",
+    "arrests": 26,
+    "details": "Regional operation across Argolis, Arcadia, Corinthia, Laconia and Messinia (July 23, 2026). 757 people checked, 40 brought in, 26 arrested. Cannabis, heroin and counterfeit banknotes seized. 225 traffic violations confirmed, 1 vehicle immobilized.",
+    "link": "https://www.astynomia.gr/2026/07/25/25-06-2026-ektetameni-astynomiki-epicheirisi-gia-tin-antimetopisi-tis-egklimatikotitas-stin-perifereia-peloponnisou/",
+    "filter_reason": "Raid Indicators",
+    "original_desc": "25-06-2026: Εκτεταμένη αστυνομική επιχείρηση για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου",
+    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 25 Ιουλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Εκτεταμένη αστυνομική επιχείρηση για την αντιμετώπιση της εγκληματικότητας στην Περιφέρεια Πελοποννήσου Συνελήφθησαν -26- άτομα..."
+  },
+  {
+    "date": "23 Jul 2026",
+    "loc": "Tripoli | North Kynouria | Corinth",
+    "lat": 37.61,
+    "lng": 22.73,
+    "desc": "23-07-2026: Targeted police operations in Arcadia and Corinthia",
+    "offences": "Identity card deprivation | Electricity theft | Insubordination",
+    "arrests": 6,
+    "details": "Operations in Tripoli, North Kynouria and Corinth municipalities (July 22, 2026). 33 people checked across two regions, 8 brought in, 6 arrested (2 for identity card in Arcadia, 4 in Corinthia for electricity theft (2), insubordination (1), identity card (1)). 15 traffic violations confirmed total.",
+    "link": "https://www.astynomia.gr/2026/07/23/23-07-2026-stochevmenes-astynomikes-epicheiriseis-pragmatopoiithikan-stin-arkadia-kai-ti-korinthia/",
+    "filter_reason": "Raid Indicators",
+    "original_desc": "23-07-2026: Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αρκαδία και τη Κορινθία",
+    "original_details": "ΓΡΑΦΕΙΟ ΕΝΗΜΕΡΩΣΗΣ ΔΗΜΟΣΙΟΓΡΑΦΩΝ ΠΕΛΟΠΟΝΝΗΣΟΥ Τρίπολη, 23 Ιουλίου 2026 ΔΕΛΤΙΟ ΤΥΠΟΥ Στοχευμένες αστυνομικές επιχειρήσεις πραγματοποιήθηκαν στην Αρκαδία και τη Κορινθία Στο πλαίσιο των επιχειρήσεων συνελήφθησαν συνολικά -6- άτομα..."
+  },
+  {
     "date": "21 Jul 2026",
     "loc": "Argolida",
     "lat": 37.61,
